@@ -105,6 +105,49 @@ def catalog_product(row):
                 specification = json.loads(specification_row["spec_json"])
             except json.JSONDecodeError:
                 specification = {}
+    color_images = {}
+    for variant in variants:
+        if not variant["sku"]:
+            continue
+        image_rows = connection.execute(
+            """
+            select color_name, image from store_foldercolorimage
+            where sku = ? and (brand_id = ? or brand_id is null)
+            order by \"order\", id
+            """,
+            (variant["sku"], row["brand_id"]),
+        ).fetchall()
+        if image_rows:
+            color_images.setdefault(variant["sku"], {
+                "sku": variant["sku"],
+                "color_name": image_rows[0]["color_name"],
+                "images": [],
+            })
+            color_images[variant["sku"]]["images"].extend(
+                f"/media/{image['image']}" for image in image_rows
+            )
+    content_row = connection.execute(
+        "select content_text, image from store_productcontent where product_id = ? limit 1",
+        (row["id"],),
+    ).fetchone()
+    review_rows = connection.execute(
+        """
+        select r.rating, r.created_at, r.comment, r.images,
+               coalesce(nullif(trim(u.first_name || ' ' || u.last_name), ''), u.username, u.email, 'Khách hàng') as user_name
+        from store_productreview r
+        left join store_customuser u on u.id = r.user_id
+        where r.product_id = ?
+        order by r.created_at desc, r.id desc
+        """,
+        (row["id"],),
+    ).fetchall()
+    reviews = []
+    for review in review_rows:
+        try:
+            review_images = json.loads(review["images"] or "[]")
+        except json.JSONDecodeError:
+            review_images = []
+        reviews.append({**dict(review), "images": review_images})
     return {
         **item,
         "description": row["description"] or "",
@@ -112,6 +155,9 @@ def catalog_product(row):
         "detail": dict(detail) if detail else None,
         "variants": variants,
         "specification": specification,
+        "colorImages": list(color_images.values()),
+        "content": dict(content_row) if content_row else None,
+        "reviews": reviews,
     }
 
 catalog = [catalog_product(row) for row in product_rows]
