@@ -37,7 +37,9 @@ product_rows = connection.execute(
            p.discount_percent, p.stock, p.brand_id, b.name as brand_name,
            d.original_price as detail_original_price,
            d.discount_percent as detail_discount_percent,
-           (select min(v.price) from store_productvariant v where v.detail_id = d.id) as variant_price
+           (select min(v.price) from store_productvariant v where v.detail_id = d.id) as variant_price,
+           (select min(v.original_price) from store_productvariant v where v.detail_id = d.id) as variant_original_price,
+           (select max(v.discount_percent) from store_productvariant v where v.detail_id = d.id) as variant_discount_percent
     from store_product p
     left join store_brand b on b.id = p.brand_id
     left join store_productdetail d on d.product_id = p.id
@@ -47,8 +49,8 @@ product_rows = connection.execute(
 ).fetchall()
 
 def product(row):
-    original = row["detail_original_price"] or row["original_price"] or 0
-    discount = row["detail_discount_percent"] or row["discount_percent"] or 0
+    original = row["detail_original_price"] or row["original_price"] or row["variant_original_price"] or 0
+    discount = row["detail_discount_percent"] or row["discount_percent"] or row["variant_discount_percent"] or 0
     price = row["price"] or row["variant_price"] or 0
     if not price and original and discount:
         price = round(original * (100 - discount) / 100 / 5000) * 5000

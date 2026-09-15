@@ -16,7 +16,8 @@ const products = homeData.products.map(
       formatPrice(item.price),
       item.originalPrice ? formatPrice(item.originalPrice) : "",
       item.image,
-    ] as [string, string, string, string],
+      item.discountPercent,
+    ] as [string, string, string, string, number],
 );
 const hotSaleProducts = homeData.hotSaleProducts.map(
   (item) =>
@@ -25,7 +26,8 @@ const hotSaleProducts = homeData.hotSaleProducts.map(
       formatPrice(item.price),
       item.originalPrice ? formatPrice(item.originalPrice) : "",
       item.image,
-    ] as [string, string, string, string],
+      item.discountPercent,
+    ] as [string, string, string, string, number],
 );
 const suggestedProducts = homeData.suggestedProducts.map(
   (item) =>
@@ -34,7 +36,8 @@ const suggestedProducts = homeData.suggestedProducts.map(
       formatPrice(item.price),
       item.originalPrice ? formatPrice(item.originalPrice) : "",
       item.image,
-    ] as [string, string, string, string],
+      item.discountPercent,
+    ] as [string, string, string, string, number],
 );
 const bestSellerProducts = products;
 const reviewVideos = [
@@ -436,6 +439,9 @@ export default function Home() {
               className="qh-hotsale-header"
               style={{
                 backgroundImage: "url('/media/hotsale/2026_header_bg.png')",
+                backgroundPosition: "center",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <div className="qh-hotsale-header-inner">
@@ -487,6 +493,9 @@ export default function Home() {
               className="qh-hotsale-body"
               style={{
                 backgroundImage: "url('/media/hotsale/2026_body_bg_desk.webp')",
+                backgroundPosition: "center",
+                backgroundSize: "100% 100%",
+                backgroundRepeat: "no-repeat",
               }}
             >
               <img
@@ -627,10 +636,11 @@ export default function Home() {
             </div>
           </aside>
           <div className="qh-product-grid" id="products">
-            {products.map(([name, price, old, image]) => (
+            {products.map(([name, price, old, image, discount]) => (
               <a href="#products" className="qh-product-card" key={name}>
                 <div className="qh-product-image">
                   <img src={image} alt={name} />
+                  {discount > 0 && <div className="discount-badge">-{discount}%</div>}
                   <button
                     className={`wishlist-btn ${liked.includes(name) ? "liked" : ""}`}
                     onClick={(event) => toggleLiked(name, event)}
