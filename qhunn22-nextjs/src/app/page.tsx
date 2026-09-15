@@ -19,6 +19,9 @@ const products = homeData.products.map(
       item.discountPercent,
     ] as [string, string, string, string, number],
 );
+const productSlugByName = Object.fromEntries(
+  homeData.products.map((item) => [item.name, item.slug]),
+);
 const hotSaleProducts = homeData.hotSaleProducts.map(
   (item) =>
     [
@@ -173,7 +176,8 @@ export default function Home() {
             <div className="qh-search">
               <form
                 className="qh-search-form"
-                onSubmit={(event) => event.preventDefault()}
+                action="/search"
+                method="get"
               >
                 <input
                   className="qh-search-input"
@@ -290,7 +294,8 @@ export default function Home() {
           </button>
           <form
             className="qh-msp-form"
-            onSubmit={(event) => event.preventDefault()}
+            action="/search"
+            method="get"
           >
             <input
               className="qh-msp-input"
@@ -530,7 +535,7 @@ export default function Home() {
                 <div className="qh-hotsale-overflow">
                   <div className="qh-hotsale-track" style={{ transform: `translateX(-${hotSaleIndex * 20.8}%)` }}>
                     {activeHotSaleProducts.map(([name, price, old, image]) => (
-                      <a className="qh-hotsale-card" href="#products" key={name}>
+                      <a className="qh-hotsale-card" href={`/product/${productSlugByName[name] ?? ""}`} key={name}>
                         <div className="qh-hotsale-card-img">
                           <img src={image} alt={name} />
                         </div>
@@ -637,7 +642,7 @@ export default function Home() {
           </aside>
           <div className="qh-product-grid" id="products">
             {products.map(([name, price, old, image, discount]) => (
-              <a href="#products" className="qh-product-card" key={name}>
+              <a href={`/product/${productSlugByName[name] ?? ""}`} className="qh-product-card" key={name}>
                 <div className="qh-product-image">
                   <img src={image} alt={name} />
                   {discount > 0 && <div className="discount-badge">-{discount}%</div>}

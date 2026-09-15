@@ -6,6 +6,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DB = ROOT / "tailieuthamkhaonocommit" / "db.sqlite3"
 OUTPUT = Path(__file__).resolve().parents[1] / "src" / "data" / "home-data.json"
+CATALOG_OUTPUT = Path(__file__).resolve().parents[1] / "src" / "data" / "catalog-data.json"
 OUTPUT.parent.mkdir(parents=True, exist_ok=True)
 
 logo_by_slug = {
@@ -35,6 +36,7 @@ product_rows = connection.execute(
     """
     select p.id, p.name, p.slug, p.image, p.price, p.original_price,
            p.discount_percent, p.stock, p.brand_id, b.name as brand_name,
+           p.description, c.name as category_name,
            d.original_price as detail_original_price,
            d.discount_percent as detail_discount_percent,
            (select min(v.price) from store_productvariant v where v.detail_id = d.id) as variant_price,
@@ -42,6 +44,7 @@ product_rows = connection.execute(
            (select max(v.discount_percent) from store_productvariant v where v.detail_id = d.id) as variant_discount_percent
     from store_product p
     left join store_brand b on b.id = p.brand_id
+    left join store_category c on c.id = p.category_id
     left join store_productdetail d on d.product_id = p.id
     where p.is_active = 1
     order by case when p.stock > 0 then 0 else 1 end, p.id desc
@@ -63,6 +66,55 @@ def product(row):
     }
 
 products = [product(row) for row in product_rows]
+
+def catalog_product(row):
+    item = product(row)
+    detail = connection.execute(
+        """
+        select id, original_price, discount_percent, sku, description, youtube_id
+        from store_productdetail
+        where product_id = ? and is_active = 1
+        order by id
+        limit 1
+        """,
+        (row["id"],),
+    ).fetchone()
+    variants = []
+    if detail:
+        variants = [
+            dict(variant)
+            for variant in connection.execute(
+                """
+                select id, color_name, color_hex, storage, price, original_price,
+                       discount_percent, sku, stock_quantity
+                from store_productvariant
+                where detail_id = ? and is_active = 1
+                order by id
+                """,
+                (detail["id"],),
+            ).fetchall()
+        ]
+    specification = {}
+    if detail:
+        specification_row = connection.execute(
+            "select spec_json from store_productspecification where detail_id = ? limit 1",
+            (detail["id"],),
+        ).fetchone()
+        if specification_row and specification_row["spec_json"]:
+            try:
+                specification = json.loads(specification_row["spec_json"])
+            except json.JSONDecodeError:
+                specification = {}
+    return {
+        **item,
+        "description": row["description"] or "",
+        "category": row["category_name"] or "",
+        "detail": dict(detail) if detail else None,
+        "variants": variants,
+        "specification": specification,
+    }
+
+catalog = [catalog_product(row) for row in product_rows]
 hot_ids = [row["product_id"] for row in connection.execute(
     "select product_id from store_hotsaleproduct where is_active = 1 order by sort_order, id limit 10"
 )]
@@ -96,4 +148,9 @@ payload = {
     "blogs": blogs,
 }
 OUTPUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+CATALOG_OUTPUT.write_text(
+    json.dumps({"brands": brands, "products": catalog}, ensure_ascii=False, indent=2),
+    encoding="utf-8",
+)
 print(f"Synced {len(products)} products, {len(brands)} brands, {len(banners)} banners, {len(blogs)} blogs")
+print(f"Synced catalog details for {len(catalog)} products and {sum(len(item['variants']) for item in catalog)} variants")

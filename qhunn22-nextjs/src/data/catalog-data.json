@@ -1,0 +1,6667 @@
+{
+  "brands": [
+    {
+      "id": 25,
+      "name": "APPLE",
+      "slug": "apple",
+      "logo": "logo_iphone_ngang_eac93ff477.webp"
+    },
+    {
+      "id": 39,
+      "name": "BENCO",
+      "slug": "benco",
+      "logo": "logo_benco_ngang_d31d9c3b77.webp"
+    },
+    {
+      "id": 36,
+      "name": "HONOR",
+      "slug": "honor",
+      "logo": "logo_honor_ngang_814fca59e4.webp"
+    },
+    {
+      "id": 27,
+      "name": "OPPO",
+      "slug": "oppo",
+      "logo": "logo_oppo_ngang_68d31fcd73.webp"
+    },
+    {
+      "id": 35,
+      "name": "REALME",
+      "slug": "realme",
+      "logo": "logo_realme_ngang_0185815a13.webp"
+    },
+    {
+      "id": 37,
+      "name": "RED MAGIC",
+      "slug": "red-magic",
+      "logo": "logo_redmagic_ngang_505d29c537.webp"
+    },
+    {
+      "id": 26,
+      "name": "SAMSUNG",
+      "slug": "samsung",
+      "logo": "logo_samsung_ngang_1624d75bd8.webp"
+    },
+    {
+      "id": 38,
+      "name": "TECNO",
+      "slug": "tecno",
+      "logo": "logo_tecno_ngang_c587e5f1fa.webp"
+    },
+    {
+      "id": 34,
+      "name": "VIVO",
+      "slug": "vivo",
+      "logo": "logo_vivo_ngang_45494ff733.webp"
+    },
+    {
+      "id": 28,
+      "name": "XIAOMI",
+      "slug": "xiaomi",
+      "logo": "logo_xiaomi_ngang_0faf267234.webp"
+    }
+  ],
+  "products": [
+    {
+      "id": 49,
+      "name": "RedMagic 10S Pro",
+      "slug": "redmagic-10s-pro",
+      "image": "/media/products/2026/03/1324231.png",
+      "price": 14790000,
+      "originalPrice": 18490000,
+      "discountPercent": 20,
+      "stock": 9,
+      "brand": "RED MAGIC",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 27,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "10SUC",
+        "description": "",
+        "youtube_id": "v4lYvf_Bqo0"
+      },
+      "variants": [
+        {
+          "id": 176,
+          "color_name": "10SUC - Đen Bóng Đêm",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 14790000,
+          "original_price": 18490000,
+          "discount_percent": 20,
+          "sku": "10SUC",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "RedMagic 10S Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 16,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Snapdragon 8 Elite",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 7050,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.85,
+          "screen_size_range": "above_6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "1.5K",
+          "resolution_type": "1.5K",
+          "refresh_rate": 144,
+          "brightness": 2000,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "wide"
+          ],
+          "video": [
+            "8K",
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "gaming_trigger",
+            "cooling_system",
+            "ai_features"
+          ],
+          "water_resistance": "IP54",
+          "material": [
+            "metal",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "06/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "163.4 x 76.1 x 8.9 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "229 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính (gaming RGB)"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP54"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Elite"
+              },
+              {
+                "label": "RAM",
+                "value": "16 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno 830"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.85 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2688 x 1216"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "144 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (main, OIS) + 50 MP (ultra wide) + 2 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "16 MP (ẩn dưới màn)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nAI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "7050 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "80W nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 15 (RedMagic OS)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 48,
+      "name": "RedMagic 11 Pro",
+      "slug": "redmagic-11-pro",
+      "image": "/media/products/2026/03/51235123.png",
+      "price": 18890000,
+      "originalPrice": 20990000,
+      "discountPercent": 10,
+      "stock": 9,
+      "brand": "RED MAGIC",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 28,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "11NAS,8SFN4",
+        "description": "",
+        "youtube_id": "8d87v6k-OVo"
+      },
+      "variants": [
+        {
+          "id": 172,
+          "color_name": "11NAS - Subzero",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 18890000,
+          "original_price": 20990000,
+          "discount_percent": 10,
+          "sku": "11NAS",
+          "stock_quantity": 0
+        },
+        {
+          "id": 173,
+          "color_name": "8SFN4 - Nightfreeze",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 18890000,
+          "original_price": 20990000,
+          "discount_percent": 10,
+          "sku": "8SFN4",
+          "stock_quantity": 0
+        },
+        {
+          "id": 174,
+          "color_name": "8SFN4 - Nightfreeze",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 22490000,
+          "original_price": 24990000,
+          "discount_percent": 10,
+          "sku": "8SFN4",
+          "stock_quantity": 0
+        },
+        {
+          "id": 175,
+          "color_name": "11NAS - Subzero",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 22490000,
+          "original_price": 24990000,
+          "discount_percent": 10,
+          "sku": "11NAS",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "RedMagic 11 Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 16,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Snapdragon 8 Elite Gen 5",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 7500,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired",
+            "wireless"
+          ],
+          "screen_size": 6.85,
+          "screen_size_range": "above_6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "1.5K",
+          "resolution_type": "1.5K",
+          "refresh_rate": 144,
+          "brightness": 2000,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "8K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "ai_features",
+            "gaming_trigger",
+            "cooling_system"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "metal",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "10/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "163.8 x 76.5 x 8.9 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "230 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính (RGB gaming)"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Elite Gen 5"
+              },
+              {
+                "label": "RAM",
+                "value": "16 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno 840"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.85 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED (BOE X10)"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2688 x 1216"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "144 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (main, OIS) + 50 MP (ultra wide) + 2 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "16 MP (ẩn dưới màn)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "7500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "80W nhanh\nKhông dây"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 16 (RedMagic OS)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 47,
+      "name": "Realme 13+",
+      "slug": "realme-13-5g",
+      "image": "/media/products/2026/03/24144234.png",
+      "price": 7455000,
+      "originalPrice": 9320000,
+      "discountPercent": 20,
+      "stock": 10,
+      "brand": "REALME",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 26,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "13HSN",
+        "description": "",
+        "youtube_id": "FonvP90uY8U"
+      },
+      "variants": [
+        {
+          "id": 171,
+          "color_name": "13HSN - Tím Huyền Ảo",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 7455000,
+          "original_price": 9320000,
+          "discount_percent": 20,
+          "sku": "13HSN",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Realme 13+",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 256,
+          "memory_card": "none",
+          "chip": "Dimensity 7300 Energy",
+          "chip_brand": "MediaTek",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 5000,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.67,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "FHD+",
+          "resolution_type": "FHD+",
+          "refresh_rate": 120,
+          "brightness": 2000,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "ai_features"
+          ],
+          "water_resistance": "none",
+          "material": [
+            "plastic",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "2024"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "165.6 x 76.1 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "190 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhựa + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "Không"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "MediaTek Dimensity 7300 Energy"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Mali-G615"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.67 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2400 x 1080"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (chính, OIS) + 8 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "16 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "80W nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 14 (realme UI)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 46,
+      "name": "OPPO Reno15",
+      "slug": "oppo-reno15-5g",
+      "image": "/media/products/2026/03/34252.png",
+      "price": 15855000,
+      "originalPrice": 16690000,
+      "discountPercent": 5,
+      "stock": 10,
+      "brand": "OPPO",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 23,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "15OSX,15ONR",
+        "description": "",
+        "youtube_id": "D1tt1ZCmblA"
+      },
+      "variants": [
+        {
+          "id": 169,
+          "color_name": "15OSX - Xanh",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 15855000,
+          "original_price": 16690000,
+          "discount_percent": 5,
+          "sku": "15OSX",
+          "stock_quantity": 0
+        },
+        {
+          "id": 170,
+          "color_name": "15ONR - Trắng",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 15855000,
+          "original_price": 16690000,
+          "discount_percent": 5,
+          "sku": "15ONR",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "OPPO Reno15",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 256,
+          "memory_card": "none",
+          "chip": "Snapdragon 7 Gen 4",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 6500,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.59,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "FHD+",
+          "resolution_type": "FHD+",
+          "refresh_rate": 120,
+          "brightness": 1400,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "ai_features"
+          ],
+          "water_resistance": "IP65",
+          "material": [
+            "glass",
+            "metal"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "01/2026"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "160.2 x 74.3 x 7.6 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "197 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP65"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 7 Gen 4"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno 722"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.59 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2760 x 1256"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "1400 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (main, OIS) + 50 MP (tele) + 8 MP (ultra wide)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAI\nGóc rộng"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "6500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "80W nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 16 (ColorOS 16)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 45,
+      "name": "Honor 400 Pro",
+      "slug": "honor-400-5g",
+      "image": "/media/products/2026/03/125352.png",
+      "price": 14240000,
+      "originalPrice": 14990000,
+      "discountPercent": 5,
+      "stock": 4,
+      "brand": "HONOR",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 24,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "400NS,400SN",
+        "description": "",
+        "youtube_id": "PdnLD31O07g"
+      },
+      "variants": [
+        {
+          "id": 167,
+          "color_name": "400NS - Xám",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 14240000,
+          "original_price": 14990000,
+          "discount_percent": 5,
+          "sku": "400NS",
+          "stock_quantity": 0
+        },
+        {
+          "id": 168,
+          "color_name": "400SN - Đen",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 14240000,
+          "original_price": 14990000,
+          "discount_percent": 5,
+          "sku": "400SN",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Honor 400 Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Snapdragon 8 Gen 3",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 6000,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "reverse"
+          ],
+          "screen_size": 6.7,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "1.5K",
+          "resolution_type": "1.5K",
+          "refresh_rate": 120,
+          "brightness": 5000,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "reverse_charging",
+            "ai_features"
+          ],
+          "water_resistance": "IP69",
+          "material": [
+            "glass",
+            "metal"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "05/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "160.8 x 76.1 x 8.1 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "205 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68/IP69"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Gen 3"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno 750"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.7 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2800 x 1280"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "5000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "200 MP (chính) + 50 MP (tele 3x) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học 3x\nMacro\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "6000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "100W nhanh\n50W không dây\nSạc ngược"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 15 (MagicOS 9)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 44,
+      "name": "Benco S1 Pro",
+      "slug": "benco-s1-pro",
+      "image": "/media/products/2026/03/3251235.png",
+      "price": 5025000,
+      "originalPrice": 5290000,
+      "discountPercent": 5,
+      "stock": 10,
+      "brand": "BENCO",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 25,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "S1UNE,S18N4,S184N",
+        "description": "",
+        "youtube_id": "INXcWbsOmcg"
+      },
+      "variants": [
+        {
+          "id": 164,
+          "color_name": "S184N - Trắng",
+          "color_hex": "",
+          "storage": "256",
+          "price": 5025000,
+          "original_price": 5290000,
+          "discount_percent": 5,
+          "sku": "S184N",
+          "stock_quantity": 0
+        },
+        {
+          "id": 165,
+          "color_name": "S1UNE - Xanh",
+          "color_hex": "",
+          "storage": "256",
+          "price": 5025000,
+          "original_price": 5290000,
+          "discount_percent": 5,
+          "sku": "S1UNE",
+          "stock_quantity": 0
+        },
+        {
+          "id": 166,
+          "color_name": "S18N4 - Đen",
+          "color_hex": "",
+          "storage": "256",
+          "price": 5025000,
+          "original_price": 5290000,
+          "discount_percent": 5,
+          "sku": "S18N4",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Benco S1 Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 8,
+          "rom": 256,
+          "memory_card": "microSD",
+          "chip": "Unisoc T616",
+          "chip_brand": "Unisoc",
+          "network": [
+            "4G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 5",
+          "bluetooth": "5.0",
+          "connectivity": [],
+          "battery": 5000,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.8,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "IPS LCD",
+          "screen_standard": "FHD+",
+          "resolution_type": "FHD+",
+          "refresh_rate": 60,
+          "brightness": 1200,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "1080p"
+          ],
+          "special_features": [],
+          "water_resistance": "none",
+          "material": [
+            "plastic",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "2023"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "166.9 x 74.9 x 8.47 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "204 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhựa + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "Không"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Unisoc T616"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Mali-G57"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.8 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "IPS LCD"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "1080 x 2460"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "64 MP + 2 MP (macro) + AI"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nMacro\nGóc rộng\nChân dung"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "16 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nLàm đẹp\nChân dung"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "4G"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.0"
+              },
+              {
+                "label": "NFC",
+                "value": "Không"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "33W nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 13"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "name": "Xiaomi 15T Pro",
+      "slug": "xiaomi-15t-5g",
+      "image": "/media/products/2026/03/215235.png",
+      "price": 18515000,
+      "originalPrice": 19490000,
+      "discountPercent": 5,
+      "stock": 10,
+      "brand": "XIAOMI",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 22,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "15TNS,15TUN4",
+        "description": "",
+        "youtube_id": "DJ93xtDk5JM"
+      },
+      "variants": [
+        {
+          "id": 162,
+          "color_name": "15TNS - Gray",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 18515000,
+          "original_price": 19490000,
+          "discount_percent": 5,
+          "sku": "15TNS",
+          "stock_quantity": 0
+        },
+        {
+          "id": 163,
+          "color_name": "15TUN4 - Mocha Gold",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 18515000,
+          "original_price": 19490000,
+          "discount_percent": 5,
+          "sku": "15TUN4",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Xiaomi 15T Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Dimensity 9400+",
+          "chip_brand": "MediaTek",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 5500,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired",
+            "wireless"
+          ],
+          "screen_size": 6.83,
+          "screen_size_range": "above_6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "1.5K",
+          "resolution_type": "1.5K",
+          "refresh_rate": 144,
+          "brightness": 3200,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "8K",
+            "4K",
+            "HDR10+"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "ai_features"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "metal",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "162.7 x 77.9 x 7.96 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "210 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "MediaTek Dimensity 9400+"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Immortalis-G720"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.83 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2772 x 1280"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "144 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "3200 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (main) + 50 MP (tele 5x) + 12 MP (ultra wide)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học 5x\nMacro\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "32 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "90W nhanh\nKhông dây"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android (HyperOS)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "name": "Xiaomi 14T Pro",
+      "slug": "xiaomi-14t-pro",
+      "image": "/media/products/2026/03/635634645.png",
+      "price": 15920000,
+      "originalPrice": 17690000,
+      "discountPercent": 10,
+      "stock": 16,
+      "brand": "XIAOMI",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 20,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "14TSN",
+        "description": "",
+        "youtube_id": "ojnXIPkYDAY"
+      },
+      "variants": [
+        {
+          "id": 161,
+          "color_name": "Titan Xám",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 15920000,
+          "original_price": 17690000,
+          "discount_percent": 10,
+          "sku": "14TSN",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Xiaomi 14T Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Dimensity 9300+",
+          "chip_brand": "MediaTek",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 5000,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired",
+            "wireless"
+          ],
+          "screen_size": 6.67,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "1.5K",
+          "resolution_type": "1.5K",
+          "refresh_rate": 144,
+          "brightness": 4000,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "8K",
+            "HDR10+"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "ai_features"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "metal",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2024"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "160.4 x 75.1 x 8.4 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "209 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Kim loại + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "MediaTek Dimensity 9300+"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Immortalis-G720"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.67 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2712 x 1220"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "144 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "4000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (chính) + 50 MP (tele) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nMacro\nGóc rộng\nChân dung\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "32 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "120W nhanh\nKhông dây 50W"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android (HyperOS)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "name": "Tecno Camon 40 Pro",
+      "slug": "tecno-camon-30",
+      "image": "/media/products/2026/03/45745735.png",
+      "price": 5300000,
+      "originalPrice": 5890000,
+      "discountPercent": 10,
+      "stock": 9,
+      "brand": "TECNO",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 21,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "F7L2X,Q9M4K,V3T8P",
+        "description": "",
+        "youtube_id": "xAGIaqKtVPw"
+      },
+      "variants": [
+        {
+          "id": 155,
+          "color_name": "V3T8P - Đen",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 5300000,
+          "original_price": 5890000,
+          "discount_percent": 10,
+          "sku": "V3T8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 156,
+          "color_name": "Q9M4K - Trắng",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 5300000,
+          "original_price": 5890000,
+          "discount_percent": 10,
+          "sku": "Q9M4K",
+          "stock_quantity": 0
+        },
+        {
+          "id": 157,
+          "color_name": "F7L2X - Xanh",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 5300000,
+          "original_price": 5890000,
+          "discount_percent": 10,
+          "sku": "F7L2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 158,
+          "color_name": "F7L2X - Xanh",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 6185000,
+          "original_price": 6870000,
+          "discount_percent": 10,
+          "sku": "F7L2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 159,
+          "color_name": "V3T8P - Đen",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 6185000,
+          "original_price": 6870000,
+          "discount_percent": 10,
+          "sku": "V3T8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 160,
+          "color_name": "Q9M4K - Trắng",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 6185000,
+          "original_price": 6870000,
+          "discount_percent": 10,
+          "sku": "Q9M4K",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Tecno Camon 40 Pro",
+        "filters": {
+          "os": "Android",
+          "ram": 8,
+          "rom": 256,
+          "memory_card": "microSD",
+          "chip": "MediaTek Dimensity 8200",
+          "chip_brand": "MediaTek",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 5000,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.78,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "FHD+",
+          "resolution_type": "FHD+",
+          "refresh_rate": 120,
+          "brightness": 1300,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide",
+            "macro"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "ai_features"
+          ],
+          "water_resistance": "IP53",
+          "material": [
+            "plastic",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "164.5 x 74.5 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "185 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhựa + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP53"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "MediaTek Dimensity 8200"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Mali-G610"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.78 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "AMOLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2436 x 1080"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "1300 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "64 MP (chính) + 2 MP (macro)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nMacro\nGóc rộng\nChân dung"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "32 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nLàm đẹp AI"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 14 (HiOS)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "name": "Samsung Galaxy S26",
+      "slug": "samsung-galaxy-s26",
+      "image": "/media/products/2026/03/2345345.png",
+      "price": 24690000,
+      "originalPrice": 25990000,
+      "discountPercent": 5,
+      "stock": 13,
+      "brand": "SAMSUNG",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 19,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "J5K8Q,W2L9X,C7P3M,R4T6Z",
+        "description": "",
+        "youtube_id": "CYym_BWnLzo"
+      },
+      "variants": [
+        {
+          "id": 143,
+          "color_name": "J5K8Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "256",
+          "price": 24690000,
+          "original_price": 25990000,
+          "discount_percent": 5,
+          "sku": "J5K8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 144,
+          "color_name": "C7P3M - Trắng Bạc",
+          "color_hex": "",
+          "storage": "256",
+          "price": 24690000,
+          "original_price": 25990000,
+          "discount_percent": 5,
+          "sku": "C7P3M",
+          "stock_quantity": 0
+        },
+        {
+          "id": 145,
+          "color_name": "R4T6Z - Đen Than",
+          "color_hex": "",
+          "storage": "256",
+          "price": 24690000,
+          "original_price": 25990000,
+          "discount_percent": 5,
+          "sku": "R4T6Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 146,
+          "color_name": "W2L9X - Tím Nhám",
+          "color_hex": "",
+          "storage": "256",
+          "price": 24690000,
+          "original_price": 25990000,
+          "discount_percent": 5,
+          "sku": "W2L9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 147,
+          "color_name": "J5K8Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 30390000,
+          "original_price": 31990000,
+          "discount_percent": 5,
+          "sku": "J5K8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 148,
+          "color_name": "C7P3M - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 30390000,
+          "original_price": 31990000,
+          "discount_percent": 5,
+          "sku": "C7P3M",
+          "stock_quantity": 0
+        },
+        {
+          "id": 149,
+          "color_name": "W2L9X - Tím Nhám",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 30390000,
+          "original_price": 31990000,
+          "discount_percent": 5,
+          "sku": "W2L9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 150,
+          "color_name": "R4T6Z - Đen Than",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 30390000,
+          "original_price": 31990000,
+          "discount_percent": 5,
+          "sku": "R4T6Z",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Samsung Galaxy S26",
+        "filters": {
+          "os": "Android",
+          "ram": 12,
+          "rom": 256,
+          "memory_card": "none",
+          "chip": "Snapdragon 8 Gen 5",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 4500,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "reverse"
+          ],
+          "screen_size": 6.2,
+          "screen_size_range": "5-6.5",
+          "screen_type": "AMOLED",
+          "screen_standard": "FHD+",
+          "resolution_type": "FHD+",
+          "refresh_rate": 120,
+          "brightness": 2600,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "8K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "reverse_charging",
+            "ai_features"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "aluminum",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Hàn Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "01/2026"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "146.5 x 70.5 x 7.9 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "188 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Gen 5"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.2 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "Dynamic AMOLED 2X"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2340 x 1080"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2600 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP (chính) + 10 MP (tele) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nGóc rộng\nXóa phông\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "4500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nSạc ngược"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 16 (One UI)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "name": "Samsung Galaxy S26 Ultra",
+      "slug": "samsung-galaxy-s26-ultra",
+      "image": "/media/products/2026/03/9235251.png",
+      "price": 35140000,
+      "originalPrice": 36990000,
+      "discountPercent": 5,
+      "stock": 19,
+      "brand": "SAMSUNG",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 18,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "D8M2Q,K4X7L,P9T3V,Z6R1B",
+        "description": "",
+        "youtube_id": "CYym_BWnLzo"
+      },
+      "variants": [
+        {
+          "id": 131,
+          "color_name": "K4X7L - Tím Nhám",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 35140000,
+          "original_price": 36990000,
+          "discount_percent": 5,
+          "sku": "K4X7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 132,
+          "color_name": "P9T3V - Trắng Bạc",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 35140000,
+          "original_price": 36990000,
+          "discount_percent": 5,
+          "sku": "P9T3V",
+          "stock_quantity": 0
+        },
+        {
+          "id": 133,
+          "color_name": "D8M2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 35140000,
+          "original_price": 36990000,
+          "discount_percent": 5,
+          "sku": "D8M2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 134,
+          "color_name": "Z6R1B - Đen Than",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 35140000,
+          "original_price": 36990000,
+          "discount_percent": 5,
+          "sku": "Z6R1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 135,
+          "color_name": "P9T3V - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 40840000,
+          "original_price": 42990000,
+          "discount_percent": 5,
+          "sku": "P9T3V",
+          "stock_quantity": 0
+        },
+        {
+          "id": 136,
+          "color_name": "K4X7L - Tím Nhám",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 40840000,
+          "original_price": 42990000,
+          "discount_percent": 5,
+          "sku": "K4X7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 137,
+          "color_name": "Z6R1B - Đen Than",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 40840000,
+          "original_price": 42990000,
+          "discount_percent": 5,
+          "sku": "Z6R1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 138,
+          "color_name": "D8M2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 40840000,
+          "original_price": 42990000,
+          "discount_percent": 5,
+          "sku": "D8M2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 139,
+          "color_name": "Z6R1B - Đen Than",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 49390000,
+          "original_price": 51990000,
+          "discount_percent": 5,
+          "sku": "Z6R1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 140,
+          "color_name": "D8M2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 49390000,
+          "original_price": 51990000,
+          "discount_percent": 5,
+          "sku": "D8M2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 141,
+          "color_name": "K4X7L - Tím Nhám",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 49390000,
+          "original_price": 51990000,
+          "discount_percent": 5,
+          "sku": "K4X7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 142,
+          "color_name": "P9T3V - Trắng Bạc",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 49390000,
+          "original_price": 51990000,
+          "discount_percent": 5,
+          "sku": "P9T3V",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Samsung Galaxy S26 Ultra",
+        "filters": {
+          "os": "Android",
+          "ram": 16,
+          "rom": 512,
+          "memory_card": "none",
+          "chip": "Snapdragon 8 Gen 5 for Galaxy",
+          "chip_brand": "Snapdragon",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "eSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.4",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 5500,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "reverse"
+          ],
+          "screen_size": 6.9,
+          "screen_size_range": "above_6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "2K+",
+          "resolution_type": "2K+",
+          "refresh_rate": 144,
+          "brightness": 3000,
+          "camera_rear_count": 4,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "8K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "reverse_charging",
+            "s_pen",
+            "ai_features"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "titanium",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Hàn Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "01/2026"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "162.5 x 79 x 8.7 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "235 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Titan + kính Gorilla Glass"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Gen 5 for Galaxy"
+              },
+              {
+                "label": "RAM",
+                "value": "16 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.9 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "Dynamic AMOLED 2X"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "3200 x 1440"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "144 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "3000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "200 MP (chính) + 50 MP (periscope) + 12 MP (tele) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nMacro\nGóc rộng\nXóa phông\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "16 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nSạc ngược"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 16 (One UI)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "name": "iPhone 16 Plus",
+      "slug": "iphone-16-plus",
+      "image": "/media/products/2026/03/iphone-16-plus-den-1_1.webp",
+      "price": 23390000,
+      "originalPrice": 25990000,
+      "discountPercent": 10,
+      "stock": 27,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 17,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "H8Q2X,M3Z7K,P6L4R,V9T1B",
+        "description": "",
+        "youtube_id": "THMpo7Ho0CI"
+      },
+      "variants": [
+        {
+          "id": 119,
+          "color_name": "P6L4R - Xanh Lưu Ly",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 23390000,
+          "original_price": 25990000,
+          "discount_percent": 10,
+          "sku": "P6L4R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 120,
+          "color_name": "V9T1B - Đen Than",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 23390000,
+          "original_price": 25990000,
+          "discount_percent": 10,
+          "sku": "V9T1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 121,
+          "color_name": "M3Z7K - Trắng Bạc",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 23390000,
+          "original_price": 25990000,
+          "discount_percent": 10,
+          "sku": "M3Z7K",
+          "stock_quantity": 0
+        },
+        {
+          "id": 122,
+          "color_name": "H8Q2X - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 23390000,
+          "original_price": 25990000,
+          "discount_percent": 10,
+          "sku": "H8Q2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 123,
+          "color_name": "V9T1B - Đen Than",
+          "color_hex": "",
+          "storage": "252GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "V9T1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 124,
+          "color_name": "M3Z7K - Trắng Bạc",
+          "color_hex": "",
+          "storage": "252GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "M3Z7K",
+          "stock_quantity": 0
+        },
+        {
+          "id": 125,
+          "color_name": "P6L4R - Xanh Lưu Ly",
+          "color_hex": "",
+          "storage": "252GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "P6L4R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 126,
+          "color_name": "H8Q2X - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "252GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "H8Q2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 127,
+          "color_name": "P6L4R - Xanh Lưu Ly",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "P6L4R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 128,
+          "color_name": "H8Q2X - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "H8Q2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 129,
+          "color_name": "V9T1B - Đen Than",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "V9T1B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 130,
+          "color_name": "M3Z7K - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "M3Z7K",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 16 Plus",
+        "filters": {
+          "os": "iOS",
+          "ram": 8,
+          "rom": 128,
+          "memory_card": "none",
+          "chip": "A18",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 4400,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "magsafe"
+          ],
+          "screen_size": 6.7,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "1.5K",
+          "refresh_rate": 60,
+          "brightness": 2000,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id",
+            "crash_detection"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "aluminum",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2024"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "160.9 x 77.8 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "201 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A18"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.7 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2796 x 1290"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48 MP (chính) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "4400 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nMagSafe"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "name": "iPhone 13",
+      "slug": "iphone-13",
+      "image": "/media/products/2026/03/iphone-13-trang-1.webp",
+      "price": 16460000,
+      "originalPrice": 18290000,
+      "discountPercent": 10,
+      "stock": 16,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 16,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "X4M9K,Q2R7L,T8V3P,N5B6Z",
+        "description": "",
+        "youtube_id": "W6NZn6ns4Wc"
+      },
+      "variants": [
+        {
+          "id": 115,
+          "color_name": "N5B6Z - Đen Than",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 16460000,
+          "original_price": 18290000,
+          "discount_percent": 10,
+          "sku": "N5B6Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 116,
+          "color_name": "Q2R7L - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 16460000,
+          "original_price": 18290000,
+          "discount_percent": 10,
+          "sku": "Q2R7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 117,
+          "color_name": "T8V3P - Trắng Bạc",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 16460000,
+          "original_price": 18290000,
+          "discount_percent": 10,
+          "sku": "T8V3P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 118,
+          "color_name": "X4M9K - Xanh Dương",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 16460000,
+          "original_price": 18290000,
+          "discount_percent": 10,
+          "sku": "X4M9K",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 13",
+        "filters": {
+          "os": "iOS",
+          "ram": 4,
+          "rom": 128,
+          "memory_card": "none",
+          "chip": "A15 Bionic",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.0",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 3240,
+          "battery_range": "3000-4000",
+          "charging": [
+            "wired",
+            "wireless",
+            "magsafe"
+          ],
+          "screen_size": 6.1,
+          "screen_size_range": "5-6.5",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "FHD+",
+          "refresh_rate": 60,
+          "brightness": 1200,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "aluminum",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2021"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "146.7 x 71.5 x 7.65 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "174 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A15 Bionic"
+              },
+              {
+                "label": "RAM",
+                "value": "4 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.1 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2532 x 1170"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "1200 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP (chính) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.0"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "3240 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nMagSafe"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 15"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "iPhone 14",
+      "slug": "iphone-14",
+      "image": "/media/products/2026/03/yterb.png",
+      "price": 17990000,
+      "originalPrice": 19990000,
+      "discountPercent": 10,
+      "stock": 10,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 14,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "K7P2X,L9Q4M,R3T8V,B6Z1N",
+        "description": "",
+        "youtube_id": "tAOlzEdB5ck"
+      },
+      "variants": [
+        {
+          "id": 111,
+          "color_name": "L9Q4M - Trắng",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "L9Q4M",
+          "stock_quantity": 0
+        },
+        {
+          "id": 112,
+          "color_name": "R3T8V - Tím",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "R3T8V",
+          "stock_quantity": 0
+        },
+        {
+          "id": 113,
+          "color_name": "B6Z1N - Đen",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "B6Z1N",
+          "stock_quantity": 0
+        },
+        {
+          "id": 114,
+          "color_name": "K7P2X - Xanh",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "K7P2X",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 14",
+        "filters": {
+          "os": "iOS",
+          "ram": 6,
+          "rom": 128,
+          "memory_card": "none",
+          "chip": "A15 Bionic",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 3279,
+          "battery_range": "3000-4000",
+          "charging": [
+            "wired",
+            "wireless",
+            "magsafe"
+          ],
+          "screen_size": 6.1,
+          "screen_size_range": "5-6.5",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "FHD+",
+          "refresh_rate": 60,
+          "brightness": 1200,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id",
+            "crash_detection"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "aluminum",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2022"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "146.7 x 71.5 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "172 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A15 Bionic"
+              },
+              {
+                "label": "RAM",
+                "value": "6 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.1 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2532 x 1170"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "1200 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP (chính) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "3279 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nMagSafe"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "iPhone 14 Pro Max",
+      "slug": "iphone-14-pro-max",
+      "image": "/media/products/2026/03/fasdca.png",
+      "price": 26990000,
+      "originalPrice": 29990000,
+      "discountPercent": 10,
+      "stock": 10,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 15,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "P3L8Q,V6M2R,D9T4Z,UNES3",
+        "description": "",
+        "youtube_id": "ffFzL6gKTeg"
+      },
+      "variants": [
+        {
+          "id": 95,
+          "color_name": "D9T4Z - Vàng Nhạt",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 26990000,
+          "original_price": 29990000,
+          "discount_percent": 10,
+          "sku": "D9T4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 96,
+          "color_name": "V6M2R - Tím Nhám",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 26990000,
+          "original_price": 29990000,
+          "discount_percent": 10,
+          "sku": "V6M2R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 97,
+          "color_name": "P3L8Q - Trắng Bạc",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 26990000,
+          "original_price": 29990000,
+          "discount_percent": 10,
+          "sku": "P3L8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 98,
+          "color_name": "UNES3 - Đen Than",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 26990000,
+          "original_price": 29990000,
+          "discount_percent": 10,
+          "sku": "UNES3",
+          "stock_quantity": 0
+        },
+        {
+          "id": 99,
+          "color_name": "V6M2R - Tím Nhám",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29690000,
+          "original_price": 32990000,
+          "discount_percent": 10,
+          "sku": "V6M2R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 100,
+          "color_name": "P3L8Q - Trắng Bạc",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29690000,
+          "original_price": 32990000,
+          "discount_percent": 10,
+          "sku": "P3L8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 101,
+          "color_name": "UNES3 - Đen Than",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29690000,
+          "original_price": 32990000,
+          "discount_percent": 10,
+          "sku": "UNES3",
+          "stock_quantity": 0
+        },
+        {
+          "id": 102,
+          "color_name": "D9T4Z - Vàng Nhạt",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29690000,
+          "original_price": 32990000,
+          "discount_percent": 10,
+          "sku": "D9T4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 103,
+          "color_name": "V6M2R - Tím Nhám",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 35090000,
+          "original_price": 38990000,
+          "discount_percent": 10,
+          "sku": "V6M2R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 104,
+          "color_name": "D9T4Z - Vàng Nhạt",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 35090000,
+          "original_price": 38990000,
+          "discount_percent": 10,
+          "sku": "D9T4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 105,
+          "color_name": "UNES3 - Đen Than",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 35090000,
+          "original_price": 38990000,
+          "discount_percent": 10,
+          "sku": "UNES3",
+          "stock_quantity": 0
+        },
+        {
+          "id": 106,
+          "color_name": "P3L8Q - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 35090000,
+          "original_price": 38990000,
+          "discount_percent": 10,
+          "sku": "P3L8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 107,
+          "color_name": "P3L8Q - Trắng Bạc",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 41390000,
+          "original_price": 45990000,
+          "discount_percent": 10,
+          "sku": "P3L8Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 108,
+          "color_name": "UNES3 - Đen Than",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 41390000,
+          "original_price": 45990000,
+          "discount_percent": 10,
+          "sku": "UNES3",
+          "stock_quantity": 0
+        },
+        {
+          "id": 109,
+          "color_name": "V6M2R - Tím Nhám",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 41390000,
+          "original_price": 45990000,
+          "discount_percent": 10,
+          "sku": "V6M2R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 110,
+          "color_name": "D9T4Z - Vàng Nhạt",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 41390000,
+          "original_price": 45990000,
+          "discount_percent": 10,
+          "sku": "D9T4Z",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 14 Pro Max",
+        "filters": {
+          "os": "iOS",
+          "ram": 6,
+          "rom": 128,
+          "memory_card": "none",
+          "chip": "A16 Bionic",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 4323,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "magsafe"
+          ],
+          "screen_size": 6.7,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "1.5K",
+          "refresh_rate": 120,
+          "brightness": 2000,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR",
+            "Dolby Vision"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id",
+            "dynamic_island"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "stainless_steel",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2022"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "160.7 x 77.6 x 7.85 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "240 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Thép không gỉ + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A16 Bionic"
+              },
+              {
+                "label": "RAM",
+                "value": "6 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.7 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2796 x 1290"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48 MP (chính) + 12 MP (tele) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nMacro\nGóc rộng\nXóa phông\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "4323 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nMagSafe"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 16"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "name": "iPhone 15",
+      "slug": "iphone-15",
+      "image": "/media/products/2026/03/qrwrqe.png",
+      "price": 17990000,
+      "originalPrice": 19990000,
+      "discountPercent": 10,
+      "stock": 1,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 13,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "Q8X2L,N5K9R,Z1M7P,H3T6W,C9V4B",
+        "description": "",
+        "youtube_id": "wP68FooUpeA"
+      },
+      "variants": [
+        {
+          "id": 83,
+          "color_name": "Q8X2L - Xanh Dương",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "Q8X2L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 84,
+          "color_name": "N5K9R - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "N5K9R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 85,
+          "color_name": "Z1M7P - Xanh Lá",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "Z1M7P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 86,
+          "color_name": "C9V4B - Đen Than",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 17990000,
+          "original_price": 19990000,
+          "discount_percent": 10,
+          "sku": "C9V4B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 87,
+          "color_name": "Q8X2L - Xanh Dương",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 20690000,
+          "original_price": 22990000,
+          "discount_percent": 10,
+          "sku": "Q8X2L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 88,
+          "color_name": "Z1M7P - Xanh Lá",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 20690000,
+          "original_price": 22990000,
+          "discount_percent": 10,
+          "sku": "Z1M7P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 89,
+          "color_name": "C9V4B - Đen Than",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 20690000,
+          "original_price": 22990000,
+          "discount_percent": 10,
+          "sku": "C9V4B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 90,
+          "color_name": "N5K9R - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 20690000,
+          "original_price": 22990000,
+          "discount_percent": 10,
+          "sku": "N5K9R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 91,
+          "color_name": "N5K9R - Hồng Nhạt",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "N5K9R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 92,
+          "color_name": "C9V4B - Đen Than",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "C9V4B",
+          "stock_quantity": 0
+        },
+        {
+          "id": 93,
+          "color_name": "Z1M7P - Xanh Lá",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "Z1M7P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 94,
+          "color_name": "Q8X2L - Xanh Dương",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 26090000,
+          "original_price": 28990000,
+          "discount_percent": 10,
+          "sku": "Q8X2L",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 15",
+        "filters": {
+          "os": "iOS",
+          "ram": 6,
+          "rom": 128,
+          "memory_card": "none",
+          "chip": "A16 Bionic",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 6",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 3349,
+          "battery_range": "3000-4000",
+          "charging": [
+            "wired",
+            "wireless"
+          ],
+          "screen_size": 6.1,
+          "screen_size_range": "5-6.5",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "FHD+",
+          "refresh_rate": 60,
+          "brightness": 2000,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "HDR"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "aluminum",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2023"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "147.6 x 71.6 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "171 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A16 Bionic"
+              },
+              {
+                "label": "RAM",
+                "value": "6 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.1 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2556 x 1179"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48 MP (chính) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "3349 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 17"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "iPhone 16 Pro Max",
+      "slug": "iphone-16-pro-max",
+      "image": "/media/products/2026/03/cccc.png",
+      "price": 31490000,
+      "originalPrice": 34990000,
+      "discountPercent": 10,
+      "stock": 10,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 12,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "X9K2Q,M4Z8P,T7L1R,NDYS5",
+        "description": "",
+        "youtube_id": "KaTjXjNc-JM"
+      },
+      "variants": [
+        {
+          "id": 56,
+          "color_name": "NDYS5 - Titan Đen",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "NDYS5",
+          "stock_quantity": 0
+        },
+        {
+          "id": 57,
+          "color_name": "M4Z8P - Titan Sa Mạc",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "M4Z8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 58,
+          "color_name": "X9K2Q - Titan Tự Nhiên",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 59,
+          "color_name": "T7L1R - Titan Trắng",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 31490000,
+          "original_price": 34990000,
+          "discount_percent": 10,
+          "sku": "T7L1R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 60,
+          "color_name": "NDYS5 - Titan Đen",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 37710000,
+          "original_price": 40990000,
+          "discount_percent": 8,
+          "sku": "NDYS5",
+          "stock_quantity": 0
+        },
+        {
+          "id": 61,
+          "color_name": "T7L1R - Titan Trắng",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 37710000,
+          "original_price": 40990000,
+          "discount_percent": 8,
+          "sku": "T7L1R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 62,
+          "color_name": "M4Z8P - Titan Sa Mạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 37710000,
+          "original_price": 40990000,
+          "discount_percent": 8,
+          "sku": "M4Z8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 63,
+          "color_name": "X9K2Q - Titan Tự Nhiên",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 37710000,
+          "original_price": 40990000,
+          "discount_percent": 8,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 64,
+          "color_name": "M4Z8P - Titan Sa Mạc",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 43230000,
+          "original_price": 46990000,
+          "discount_percent": 8,
+          "sku": "M4Z8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 65,
+          "color_name": "X9K2Q - Titan Tự Nhiên",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 43230000,
+          "original_price": 46990000,
+          "discount_percent": 8,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 66,
+          "color_name": "T7L1R - Titan Trắng",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 43230000,
+          "original_price": 46990000,
+          "discount_percent": 8,
+          "sku": "T7L1R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 67,
+          "color_name": "NDYS5 - Titan Đen",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 43230000,
+          "original_price": 46990000,
+          "discount_percent": 8,
+          "sku": "NDYS5",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 16 Pro Max",
+        "filters": {
+          "os": "iOS",
+          "ram": 8,
+          "rom": 256,
+          "memory_card": "none",
+          "chip": "A18 Pro",
+          "chip_brand": "Apple",
+          "network": [
+            "5G"
+          ],
+          "sim": [
+            "eSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 7",
+          "bluetooth": "5.3",
+          "connectivity": [
+            "NFC"
+          ],
+          "battery": 4600,
+          "battery_range": "4000-5500",
+          "charging": [
+            "wired",
+            "wireless",
+            "magsafe"
+          ],
+          "screen_size": 6.9,
+          "screen_size_range": "above_6.8",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution_type": "1.5K",
+          "refresh_rate": 120,
+          "brightness": 2500,
+          "camera_rear_count": 3,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "portrait",
+            "ois",
+            "zoom",
+            "macro",
+            "wide"
+          ],
+          "video": [
+            "4K",
+            "Dolby Vision"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "face_id",
+            "lidar",
+            "crash_detection"
+          ],
+          "water_resistance": "IP68",
+          "material": [
+            "titanium",
+            "glass"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "09/2024"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "163 x 77.6 x 8.3 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "227 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Titan + kính"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A18 Pro"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.9 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2868 x 1320"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2500 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48MP + 12MP + 48MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom\nMacro\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "5G",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "4600 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nMagSafe"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 18"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Samsung Galaxy S25 Ultra",
+      "slug": "samsung-galaxy-s25-ultra",
+      "image": "/media/products/2026/03/mydz.png",
+      "price": 29040000,
+      "originalPrice": 33380000,
+      "discountPercent": 13,
+      "stock": 7,
+      "brand": "SAMSUNG",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 11,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "X9K2Q,M4T7L,Z8P3R",
+        "description": "",
+        "youtube_id": "zgrog8g-EZY"
+      },
+      "variants": [
+        {
+          "id": 47,
+          "color_name": "Z8P3R - Đen",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29040000,
+          "original_price": 33380000,
+          "discount_percent": 13,
+          "sku": "Z8P3R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 48,
+          "color_name": "M4T7L - Bạc",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29040000,
+          "original_price": 33380000,
+          "discount_percent": 13,
+          "sku": "M4T7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 49,
+          "color_name": "X9K2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 29040000,
+          "original_price": 33380000,
+          "discount_percent": 13,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 50,
+          "color_name": "X9K2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 33130000,
+          "original_price": 36810000,
+          "discount_percent": 10,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 51,
+          "color_name": "M4T7L - Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 33130000,
+          "original_price": 36810000,
+          "discount_percent": 10,
+          "sku": "M4T7L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 52,
+          "color_name": "Z8P3R - Đen",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 33130000,
+          "original_price": 36810000,
+          "discount_percent": 10,
+          "sku": "Z8P3R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 53,
+          "color_name": "X9K2Q - Xanh Dương",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 39580000,
+          "original_price": 43980000,
+          "discount_percent": 10,
+          "sku": "X9K2Q",
+          "stock_quantity": 0
+        },
+        {
+          "id": 54,
+          "color_name": "Z8P3R - Đen",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 39580000,
+          "original_price": 43980000,
+          "discount_percent": 10,
+          "sku": "Z8P3R",
+          "stock_quantity": 0
+        },
+        {
+          "id": 55,
+          "color_name": "M4T7L - Bạc",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 39580000,
+          "original_price": 43980000,
+          "discount_percent": 10,
+          "sku": "M4T7L",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Samsung Galaxy S25 Ultra",
+        "filters": {
+          "os": "Android",
+          "rom": 512,
+          "ram": 12,
+          "network": [
+            "5G"
+          ],
+          "connectivity": [
+            "NFC",
+            "Bluetooth",
+            "Hồng ngoại"
+          ],
+          "battery": 5000,
+          "battery_range": "4000-5500",
+          "screen_size": 6.8,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "AMOLED",
+          "screen_standard": "2K+",
+          "resolution": "2K+",
+          "refresh_rate": 120,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "beauty",
+            "zoom",
+            "ois",
+            "macro",
+            "wide",
+            "portrait"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "reverse_charging"
+          ],
+          "memory_card": "none"
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Hàn Quốc"
+              },
+              {
+                "label": "Thời điểm ra mắt",
+                "value": "01/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế & Trọng lượng",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "162.3 x 79 x 8.6 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "233 g"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Titan + kính Gorilla Glass Armor"
+              }
+            ]
+          },
+          {
+            "title": "Bộ xử lý",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Snapdragon 8 Gen 4 for Galaxy"
+              },
+              {
+                "label": "CPU",
+                "value": "8 nhân"
+              },
+              {
+                "label": "GPU",
+                "value": "Adreno"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.8 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "Dynamic AMOLED 2X"
+              },
+              {
+                "label": "Chuẩn",
+                "value": "2K+"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "3120 x 1440"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2600 nits"
+              }
+            ]
+          },
+          {
+            "title": "Lưu trữ",
+            "items": [
+              {
+                "label": "ROM",
+                "value": "512 GB"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "200 MP (chính) + 50 MP (periscope) + 10 MP (tele) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nMacro\nGóc rộng\nXóa phông\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF\nChống rung"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.4"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              },
+              {
+                "label": "Hồng ngoại",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5000 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nSạc ngược"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 15 (One UI)"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "iPhone 17",
+      "slug": "iphone-17",
+      "image": "/media/products/2026/02/iphone-17-lavender-pdp-image-position-1-lavender-color-vn-vi.webp",
+      "price": 22490000,
+      "originalPrice": 24990000,
+      "discountPercent": 10,
+      "stock": 50,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 10,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "M8Q2X,R4T9K,Z7L3V",
+        "description": "",
+        "youtube_id": "4Nxazc7xw1c"
+      },
+      "variants": [
+        {
+          "id": 41,
+          "color_name": "R4T9K - Trắng Bạc",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 22490000,
+          "original_price": 24990000,
+          "discount_percent": 10,
+          "sku": "R4T9K",
+          "stock_quantity": 0
+        },
+        {
+          "id": 42,
+          "color_name": "Z7L3V - Đen",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 22490000,
+          "original_price": 24990000,
+          "discount_percent": 10,
+          "sku": "Z7L3V",
+          "stock_quantity": 0
+        },
+        {
+          "id": 43,
+          "color_name": "M8Q2X - Tím Oải Hương",
+          "color_hex": "",
+          "storage": "256GB",
+          "price": 22490000,
+          "original_price": 24990000,
+          "discount_percent": 10,
+          "sku": "M8Q2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 44,
+          "color_name": "R4T9K - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 28340000,
+          "original_price": 31490000,
+          "discount_percent": 10,
+          "sku": "R4T9K",
+          "stock_quantity": 0
+        },
+        {
+          "id": 45,
+          "color_name": "M8Q2X - Tím Oải Hương",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 28340000,
+          "original_price": 31490000,
+          "discount_percent": 10,
+          "sku": "M8Q2X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 46,
+          "color_name": "Z7L3V - Đen",
+          "color_hex": "",
+          "storage": "512GB",
+          "price": 28340000,
+          "original_price": 31490000,
+          "discount_percent": 10,
+          "sku": "Z7L3V",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 17",
+        "filters": {
+          "os": "iOS",
+          "rom": 128,
+          "ram": 8,
+          "network": [
+            "5G"
+          ],
+          "connectivity": [
+            "NFC",
+            "Bluetooth"
+          ],
+          "battery": 3600,
+          "battery_range": "3000-4000",
+          "screen_size": 6.1,
+          "screen_size_range": "5-6.5",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution": "FHD+",
+          "refresh_rate": 60,
+          "camera_features": [
+            "ai_camera",
+            "beauty",
+            "wide",
+            "portrait"
+          ],
+          "special_features": [
+            "wireless_charging"
+          ],
+          "memory_card": "none"
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Thời điểm ra mắt",
+                "value": "09/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế & Trọng lượng",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "147.6 x 71.6 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "172 g"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              }
+            ]
+          },
+          {
+            "title": "Bộ xử lý",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A19"
+              },
+              {
+                "label": "CPU",
+                "value": "6 nhân"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU 5 nhân"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.1 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Chuẩn",
+                "value": "Super Retina XDR"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2532 x 1170"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Lưu trữ",
+            "items": [
+              {
+                "label": "ROM",
+                "value": "128 GB"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48 MP (chính) + 12 MP (góc rộng)"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6E"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "3600 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "iPhone Air",
+      "slug": "iphone-air",
+      "image": "/media/products/2026/02/iphone-air-sky-blue-pdp-image-position-1-sky-blue-color-vn-vi.webp",
+      "price": 25590000,
+      "originalPrice": 31990000,
+      "discountPercent": 20,
+      "stock": 12,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 9,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "X7K2M,Q9L4Z,T3W8P",
+        "description": "",
+        "youtube_id": "JK4rHEWo3dw"
+      },
+      "variants": [
+        {
+          "id": 32,
+          "color_name": "X7K2M - Xanh Da Trời",
+          "color_hex": "",
+          "storage": "256",
+          "price": 25590000,
+          "original_price": 31990000,
+          "discount_percent": 20,
+          "sku": "X7K2M",
+          "stock_quantity": 0
+        },
+        {
+          "id": 33,
+          "color_name": "T3W8P - Trắng",
+          "color_hex": "",
+          "storage": "256",
+          "price": 25590000,
+          "original_price": 31990000,
+          "discount_percent": 20,
+          "sku": "T3W8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 34,
+          "color_name": "Q9L4Z - Đen Không Gian",
+          "color_hex": "",
+          "storage": "256",
+          "price": 25590000,
+          "original_price": 31990000,
+          "discount_percent": 20,
+          "sku": "Q9L4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 35,
+          "color_name": "T3W8P - Trắng",
+          "color_hex": "",
+          "storage": "512",
+          "price": 34640000,
+          "original_price": 38490000,
+          "discount_percent": 10,
+          "sku": "T3W8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 36,
+          "color_name": "Q9L4Z - Đen Không Gian",
+          "color_hex": "",
+          "storage": "512",
+          "price": 34640000,
+          "original_price": 38490000,
+          "discount_percent": 10,
+          "sku": "Q9L4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 37,
+          "color_name": "X7K2M - Xanh Da Trời",
+          "color_hex": "",
+          "storage": "512",
+          "price": 34640000,
+          "original_price": 38490000,
+          "discount_percent": 10,
+          "sku": "X7K2M",
+          "stock_quantity": 0
+        },
+        {
+          "id": 38,
+          "color_name": "T3W8P - Trắng",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "T3W8P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 39,
+          "color_name": "Q9L4Z - Đen Không Gian",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "Q9L4Z",
+          "stock_quantity": 0
+        },
+        {
+          "id": 40,
+          "color_name": "X7K2M - Xanh Da Trời",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "X7K2M",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone Air",
+        "filters": {
+          "os": "iOS",
+          "rom": 256,
+          "ram": 8,
+          "network": [
+            "5G"
+          ],
+          "connectivity": [
+            "NFC",
+            "Bluetooth"
+          ],
+          "battery": 3800,
+          "battery_range": "3000-4000",
+          "screen_size": 6.1,
+          "screen_size_range": "5-6.5",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution": "FHD+",
+          "refresh_rate": 60,
+          "camera_features": [
+            "ai_camera",
+            "beauty",
+            "wide",
+            "portrait"
+          ],
+          "special_features": [
+            "wireless_charging"
+          ],
+          "memory_card": "none"
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Thời điểm ra mắt",
+                "value": "09/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế & Trọng lượng",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "147.6 x 71.6 x 7.8 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "174 g"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + kính"
+              }
+            ]
+          },
+          {
+            "title": "Bộ xử lý",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A19"
+              },
+              {
+                "label": "CPU",
+                "value": "6 nhân"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU 5 nhân"
+              },
+              {
+                "label": "RAM",
+                "value": "8 GB"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.1 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Chuẩn",
+                "value": "Super Retina XDR"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2532 x 1170"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "60 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "2000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Lưu trữ",
+            "items": [
+              {
+                "label": "ROM",
+                "value": "256 GB"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nGóc rộng\nChân dung\nHDR"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "12 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 6E"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "3800 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "iPhone 17 Pro Max",
+      "slug": "iphone-17-pro-max",
+      "image": "/media/products/2026/02/iphone-17-pro-max-silver-pdp-image-position-1-silver-color-vn-vi.webp",
+      "price": 34190000,
+      "originalPrice": 37990000,
+      "discountPercent": 10,
+      "stock": 12,
+      "brand": "APPLE",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 8,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "A7K9X,Q2M8L,Z4T6P",
+        "description": "",
+        "youtube_id": "O00WZFhpuaQ"
+      },
+      "variants": [
+        {
+          "id": 20,
+          "color_name": "A7K9X - Cam Vũ Trụ",
+          "color_hex": "",
+          "storage": "256",
+          "price": 34190000,
+          "original_price": 37990000,
+          "discount_percent": 10,
+          "sku": "A7K9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 21,
+          "color_name": "Q2M8L - Xanh Đậm",
+          "color_hex": "",
+          "storage": "256",
+          "price": 34190000,
+          "original_price": 37990000,
+          "discount_percent": 10,
+          "sku": "Q2M8L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 22,
+          "color_name": "Z4T6P - Trắng Bạc",
+          "color_hex": "",
+          "storage": "256",
+          "price": 34190000,
+          "original_price": 37990000,
+          "discount_percent": 10,
+          "sku": "Z4T6P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 23,
+          "color_name": "A7K9X - Cam Vũ Trụ",
+          "color_hex": "",
+          "storage": "512",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "A7K9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 24,
+          "color_name": "Z4T6P - Trắng Bạc",
+          "color_hex": "",
+          "storage": "512",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "Z4T6P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 25,
+          "color_name": "Q2M8L - Xanh Đậm",
+          "color_hex": "",
+          "storage": "512",
+          "price": 40040000,
+          "original_price": 44490000,
+          "discount_percent": 10,
+          "sku": "Q2M8L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 26,
+          "color_name": "Z4T6P - Trắng Bạc",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 48440000,
+          "original_price": 50990000,
+          "discount_percent": 5,
+          "sku": "Z4T6P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 27,
+          "color_name": "Q2M8L - Xanh Đậm",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 48440000,
+          "original_price": 50990000,
+          "discount_percent": 5,
+          "sku": "Q2M8L",
+          "stock_quantity": 0
+        },
+        {
+          "id": 28,
+          "color_name": "A7K9X - Cam Vũ Trụ",
+          "color_hex": "",
+          "storage": "1TB",
+          "price": 48440000,
+          "original_price": 50990000,
+          "discount_percent": 5,
+          "sku": "A7K9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 29,
+          "color_name": "A7K9X - Cam Vũ Trụ",
+          "color_hex": "",
+          "storage": "2TB",
+          "price": 60790000,
+          "original_price": 63990000,
+          "discount_percent": 5,
+          "sku": "A7K9X",
+          "stock_quantity": 0
+        },
+        {
+          "id": 30,
+          "color_name": "Z4T6P - Trắng Bạc",
+          "color_hex": "",
+          "storage": "2TB",
+          "price": 60790000,
+          "original_price": 63990000,
+          "discount_percent": 5,
+          "sku": "Z4T6P",
+          "stock_quantity": 0
+        },
+        {
+          "id": 31,
+          "color_name": "Q2M8L - Xanh Đậm",
+          "color_hex": "",
+          "storage": "2TB",
+          "price": 60790000,
+          "original_price": 63990000,
+          "discount_percent": 5,
+          "sku": "Q2M8L",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "iPhone 17 Pro Max",
+        "filters": {
+          "os": "iOS",
+          "rom": 256,
+          "ram": 12,
+          "network": [
+            "5G"
+          ],
+          "connectivity": [
+            "NFC",
+            "Bluetooth"
+          ],
+          "battery": 4700,
+          "battery_range": "4000-5500",
+          "screen_size": 6.9,
+          "screen_size_range": "above_6.8",
+          "screen_type": "OLED",
+          "screen_standard": "Retina",
+          "resolution": "FHD+",
+          "refresh_rate": 120,
+          "camera_features": [
+            "slow_motion",
+            "ai_camera",
+            "beauty",
+            "zoom",
+            "ois",
+            "macro",
+            "wide",
+            "portrait"
+          ],
+          "special_features": [
+            "wireless_charging",
+            "reverse_charging"
+          ],
+          "memory_card": "none"
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Thời điểm ra mắt",
+                "value": "09/2025"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế & Trọng lượng",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "163.4 x 78 x 8.75 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "231 g"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP68"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhôm + Ceramic Shield"
+              }
+            ]
+          },
+          {
+            "title": "Bộ xử lý",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Apple A19 Pro"
+              },
+              {
+                "label": "CPU",
+                "value": "6 nhân"
+              },
+              {
+                "label": "GPU",
+                "value": "Apple GPU 6 nhân"
+              },
+              {
+                "label": "RAM",
+                "value": "12 GB"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.9 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "OLED"
+              },
+              {
+                "label": "Chuẩn",
+                "value": "Super Retina XDR"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "2868 x 1320"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "120 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "3000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Lưu trữ",
+            "items": [
+              {
+                "label": "ROM",
+                "value": "256 GB"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "48MP + 48MP + 48MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "OIS\nZoom quang học\nMacro\nGóc rộng\nXóa phông\nAI\nSlow motion"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "18 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nChân dung\nAF\nChống rung"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "5G"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.3"
+              },
+              {
+                "label": "NFC",
+                "value": "Có"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi 7"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "4700 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "Nhanh\nKhông dây\nSạc ngược"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "iOS 26"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 50,
+      "name": "Vivo Y19S",
+      "slug": "vivo-y19s",
+      "image": "/media/products/2026/03/43263462.png",
+      "price": 4490000,
+      "originalPrice": 4990000,
+      "discountPercent": 10,
+      "stock": 0,
+      "brand": "VIVO",
+      "description": "",
+      "category": "",
+      "detail": {
+        "id": 29,
+        "original_price": 0,
+        "discount_percent": 0,
+        "sku": "19UND,19ONS",
+        "description": "",
+        "youtube_id": "CsHnG5cJYec"
+      },
+      "variants": [
+        {
+          "id": 177,
+          "color_name": "19UND - Bạc",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 4490000,
+          "original_price": 4990000,
+          "discount_percent": 10,
+          "sku": "19UND",
+          "stock_quantity": 0
+        },
+        {
+          "id": 178,
+          "color_name": "19ONS - Đen",
+          "color_hex": "",
+          "storage": "128GB",
+          "price": 4490000,
+          "original_price": 4990000,
+          "discount_percent": 10,
+          "sku": "19ONS",
+          "stock_quantity": 0
+        }
+      ],
+      "specification": {
+        "name": "Vivo Y19s",
+        "filters": {
+          "os": "Android",
+          "ram": 6,
+          "rom": 128,
+          "memory_card": "microSD",
+          "chip": "Unisoc T612",
+          "chip_brand": "Unisoc",
+          "network": [
+            "4G"
+          ],
+          "sim": [
+            "nanoSIM",
+            "nanoSIM"
+          ],
+          "wifi": "WiFi 5",
+          "bluetooth": "5.2",
+          "connectivity": [],
+          "battery": 5500,
+          "battery_range": "above_5500",
+          "charging": [
+            "wired"
+          ],
+          "screen_size": 6.68,
+          "screen_size_range": "6.5-6.8",
+          "screen_type": "IPS LCD",
+          "screen_standard": "HD+",
+          "resolution_type": "HD+",
+          "refresh_rate": 90,
+          "brightness": 1000,
+          "camera_rear_count": 2,
+          "camera_features": [
+            "ai_camera",
+            "portrait",
+            "wide"
+          ],
+          "video": [
+            "1080p"
+          ],
+          "special_features": [
+            "ai_features"
+          ],
+          "water_resistance": "IP64",
+          "material": [
+            "plastic"
+          ]
+        },
+        "groups": [
+          {
+            "title": "Thông tin hàng hóa",
+            "items": [
+              {
+                "label": "Xuất xứ",
+                "value": "Trung Quốc"
+              },
+              {
+                "label": "Ra mắt",
+                "value": "11/2024"
+              },
+              {
+                "label": "Bảo hành",
+                "value": "12 tháng"
+              }
+            ]
+          },
+          {
+            "title": "Thiết kế",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "165.8 x 76.1 x 8.1 mm"
+              },
+              {
+                "label": "Trọng lượng",
+                "value": "198 g"
+              },
+              {
+                "label": "Chất liệu",
+                "value": "Nhựa"
+              },
+              {
+                "label": "Kháng nước",
+                "value": "IP64"
+              }
+            ]
+          },
+          {
+            "title": "Hiệu năng",
+            "items": [
+              {
+                "label": "Chip",
+                "value": "Unisoc T612"
+              },
+              {
+                "label": "RAM",
+                "value": "6 GB"
+              },
+              {
+                "label": "GPU",
+                "value": "Mali-G57"
+              }
+            ]
+          },
+          {
+            "title": "Màn hình",
+            "items": [
+              {
+                "label": "Kích thước",
+                "value": "6.68 inch"
+              },
+              {
+                "label": "Công nghệ",
+                "value": "IPS LCD"
+              },
+              {
+                "label": "Độ phân giải",
+                "value": "720 x 1608"
+              },
+              {
+                "label": "Tần số quét",
+                "value": "90 Hz"
+              },
+              {
+                "label": "Độ sáng",
+                "value": "1000 nits"
+              }
+            ]
+          },
+          {
+            "title": "Camera sau",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "50 MP + phụ"
+              },
+              {
+                "label": "Tính năng",
+                "value": "AI\nChân dung\nGóc rộng"
+              }
+            ]
+          },
+          {
+            "title": "Camera trước",
+            "items": [
+              {
+                "label": "Thông số",
+                "value": "5 MP"
+              },
+              {
+                "label": "Tính năng",
+                "value": "HDR\nLàm đẹp"
+              }
+            ]
+          },
+          {
+            "title": "Kết nối",
+            "items": [
+              {
+                "label": "Mạng",
+                "value": "4G"
+              },
+              {
+                "label": "WiFi",
+                "value": "WiFi"
+              },
+              {
+                "label": "Bluetooth",
+                "value": "5.2"
+              },
+              {
+                "label": "NFC",
+                "value": "Không"
+              }
+            ]
+          },
+          {
+            "title": "Pin & Sạc",
+            "items": [
+              {
+                "label": "Dung lượng",
+                "value": "5500 mAh"
+              },
+              {
+                "label": "Sạc",
+                "value": "15W nhanh"
+              }
+            ]
+          },
+          {
+            "title": "Hệ điều hành",
+            "items": [
+              {
+                "label": "OS",
+                "value": "Android 14 (Funtouch OS 14)"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
