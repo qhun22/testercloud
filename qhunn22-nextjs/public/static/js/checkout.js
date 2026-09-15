@@ -1,0 +1,466 @@
+/* ========================================
+   QHUN22 - Checkout Page JS
+   ======================================== */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    /* ==================== Cấu hình ==================== */
+    var totalAmount = window.QH_CHECKOUT_TOTAL || 0;
+    var discountAmount = 0; // Theo dõi số tiền giảm giá
+
+    /* ==================== Các phần tử DOM ==================== */
+    var payOpts = document.querySelectorAll('.qh-checkout-pay-opt:not(.disabled)');
+    var payText = document.getElementById('checkoutPayText');
+    var summaryPayMethod = document.getElementById('summaryPayMethod');
+    var summaryTotalEl = document.querySelector('.qh-checkout-summary-row.total .qh-checkout-summary-val');
+
+    /* ==================== Hàm hỗ trợ ==================== */
+    function formatPrice(num) {
+        return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.') + 'đ';
+    }
+
+    function requestJson(url, options, retryCount) {
+        var baseOptions = options || {};
+        var retries = typeof retryCount === 'number' ? retryCount : 0;
+        var timeoutMs = 15000;
+        var controller = typeof AbortController !== 'undefined' ? new AbortController() : null;
+        var timeoutId = null;
+        var requestOptions = {
+            method: baseOptions.method,
+            headers: baseOptions.headers,
+            body: baseOptions.body
+        };
+
+        if (controller) {
+            requestOptions.signal = controller.signal;
+            timeoutId = setTimeout(function () {
+                controller.abort();
+            }, timeoutMs);
+        }
+
+        return fetch(url, requestOptions)
+            .then(function (res) {
+                if (timeoutId) clearTimeout(timeoutId);
+                return res.text().then(function (text) {
+                    var payload = null;
+                    try {
+                        payload = JSON.parse(text);
+                    } catch (e) {
+                        if (!res.ok) {
+                            var httpError = new Error('HTTP_' + res.status);
+                            httpError.status = res.status;
+                            throw httpError;
+                        }
+                        throw new Error('INVALID_JSON');
+                    }
+
+                    if (!res.ok) {
+                        var serverError = new Error('HTTP_' + res.status);
+                        serverError.status = res.status;
+                        serverError.serverMessage = payload && payload.message ? payload.message : '';
+                        throw serverError;
+                    }
+
+                    return payload;
+                });
+            })
+            .catch(function (err) {
+                if (timeoutId) clearTimeout(timeoutId);
+
+                var isRetriable = (
+                    err.name === 'AbortError' ||
+                    err.message === 'Failed to fetch' ||
+                    err.message.indexOf('HTTP_5') === 0
+                );
+
+                if (retries > 0 && isRetriable) {
+                    return requestJson(url, baseOptions, retries - 1);
+                }
+
+                throw err;
+            });
+    }
+
+    /* ==================== Chọn phương thức thanh toán ==================== */
+    function updatePaySelection(opt) {
+        var shortLabel = opt.getAttribute('data-pay-short');
+        if (payText && shortLabel) {
+            payText.innerHTML = 'Bạn đang chọn hình thức thanh toán: <strong>' + shortLabel + '</strong>';
+        }
+        if (summaryPayMethod && shortLabel) {
+            summaryPayMethod.textContent = shortLabel;
+        }
+    }
+
+    payOpts.forEach(function (opt) {
+        opt.addEventListener('click', function () {
+            var payType = this.getAttribute('data-pay-type');
+
+            document.querySelectorAll('.qh-checkout-pay-opt').forEach(function (o) {
+                o.classList.remove('selected');
+                o.classList.remove('verified');
+            });
+
+            this.classList.add('selected');
+            this.classList.add('verified');
+
+            if (summaryTotalEl) {
+                summaryTotalEl.textContent = formatPrice(totalAmount);
+            }
+
+            updatePaySelection(this);
+        });
+    });
+
+    var defaultSelected = document.querySelector('.qh-checkout-pay-opt.selected');
+    if (defaultSelected) {
+        updatePaySelection(defaultSelected);
+    }
+
+    /* ==================== Thanh toán VNPay ==================== */
+    function initiateVNPayPayment() {
+        var submitBtn = document.getElementById('checkoutSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang chuyển hướng đến VNPay...';
+        }
+
+        var formData = new FormData();
+        formData.append('amount', totalAmount);
+        formData.append('order_description', 'Thanh toan QHUN22 - ' + totalAmount + ' VND');
+        formData.append('items_param', window.QH_CHECKOUT_ITEMS_PARAM || '');
+
+        fetch(window.QH_VNPAY_CREATE_URL, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': QH_CSRF_TOKEN
+            },
+            body: formData
+        })
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                if (data.success && data.payment_url) {
+                    window.location.href = data.payment_url;
+                } else {
+                    if (window.QHToast) {
+                        QHToast.show(data.message || 'Lỗi tạo thanh toán VNPay', 'error');
+                    }
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'ĐẶT HÀNG';
+                    }
+                }
+            })
+            .catch(function (err) {
+                console.error('[VNPay Create Error]', err);
+                if (window.QHToast) {
+                    QHToast.show('Lỗi kết nối đến VNPay. Vui lòng thử lại.', 'error');
+                }
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'ĐẶT HÀNG';
+                }
+            });
+    }
+
+    /* ==================== Thanh toán MoMo ==================== */
+    function initiateMoMoPayment() {
+        var submitBtn = document.getElementById('checkoutSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang chuyển hướng đến MoMo...';
+        }
+
+        var formData = new FormData();
+        formData.append('amount', totalAmount);
+        formData.append('items_param', window.QH_CHECKOUT_ITEMS_PARAM || '');
+
+        fetch(window.QH_MOMO_CREATE_URL, {
+            method: 'POST',
+            headers: {
+                'X-CSRFToken': QH_CSRF_TOKEN
+            },
+            body: formData
+        })
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                if (data.success && data.payment_url) {
+                    window.location.href = data.payment_url;
+                } else {
+                    if (window.QHToast) {
+                        QHToast.show(data.message || 'Lỗi tạo thanh toán MoMo', 'error');
+                    }
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'ĐẶT HÀNG';
+                    }
+                }
+            })
+            .catch(function (err) {
+                console.error('[MoMo Create Error]', err);
+                if (window.QHToast) {
+                    QHToast.show('Lỗi kết nối đến MoMo. Vui lòng thử lại.', 'error');
+                }
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'ĐẶT HÀNG';
+                }
+            });
+    }
+
+    /* ==================== VietQR → Chuyển hướng đến trang riêng ==================== */
+    function initiateVietQRPayment() {
+        var submitBtn = document.getElementById('checkoutSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang tạo đơn hàng...';
+        }
+
+        requestJson(window.QH_VIETQR_CREATE_ORDER_URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': QH_CSRF_TOKEN
+            },
+            body: JSON.stringify({
+                items_param: window.QH_CHECKOUT_ITEMS_PARAM || ''
+            })
+        }, 1)
+            .then(function (data) {
+                if (data.success && data.redirect_url) {
+                    window.location.href = data.redirect_url;
+                } else {
+                    if (window.QHToast) {
+                        QHToast.show(data.message || 'Lỗi tạo đơn hàng VietQR', 'error');
+                    }
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'ĐẶT HÀNG';
+                    }
+                }
+            })
+            .catch(function (err) {
+                console.error('[VietQR Create Error]', err);
+                if (window.QHToast) {
+                    QHToast.show(err.serverMessage || 'Lỗi kết nối đến VietQR. Vui lòng thử lại.', 'error');
+                }
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'ĐẶT HÀNG';
+                }
+            });
+    }
+
+    /* ==================== Đặt hàng ==================== */
+    var submitBtn = document.getElementById('checkoutSubmitBtn');
+    if (submitBtn) {
+        submitBtn.addEventListener('click', function () {
+            var selected = document.querySelector('.qh-checkout-pay-opt.selected');
+            if (!selected) {
+                if (window.QHToast) {
+                    QHToast.show('Vui lòng chọn phương thức thanh toán', 'error');
+                }
+                return;
+            }
+            var payType = selected.getAttribute('data-pay-type');
+
+            if (payType === 'vnpay') {
+                initiateVNPayPayment();
+                return;
+            }
+
+            if (payType === 'vietqr') {
+                initiateVietQRPayment();
+                return;
+            }
+
+            if (payType === 'momo') {
+                initiateMoMoPayment();
+                return;
+            }
+
+            placeOrder(payType);
+        });
+    }
+
+    function placeOrder(payType) {
+        var submitBtn = document.getElementById('checkoutSubmitBtn');
+        if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang xử lý...';
+        }
+
+        var requestData = {
+            payment_method: payType,
+            items_param: window.QH_CHECKOUT_ITEMS_PARAM || '',
+            coupon_code: window.QH_APPLIED_COUPON || ''
+        };
+
+        requestJson(window.QH_PLACE_ORDER_URL || '/order/place/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': QH_CSRF_TOKEN
+            },
+            body: JSON.stringify(requestData)
+        }, 1)
+            .then(function (data) {
+                if (data.success) {
+                    if (window.QHToast) {
+                        QHToast.show('Đặt hàng thành công!', 'success');
+                    }
+                    window.location.href = '/order/success/' + data.order_code + '/';
+                } else {
+                    if (window.QHToast) {
+                        QHToast.show(data.message || 'Lỗi đặt hàng', 'error');
+                    }
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'ĐẶT HÀNG';
+                    }
+                }
+            })
+            .catch(function (err) {
+                console.error('[Place Order Error]', err);
+                if (window.QHToast) {
+                    QHToast.show(err.serverMessage || 'Lỗi kết nối khi đặt hàng. Vui lòng thử lại.', 'error');
+                }
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = 'ĐẶT HÀNG';
+                }
+            });
+    }
+
+    /* ==================== Sticky Tóm tắt đơn hàng - cuộn theo scroll (giống giỏ hàng) ==================== */
+    (function initStickySummary() {
+        var summary = document.querySelector('.qh-checkout-right');
+        var container = document.querySelector('.qh-checkout-grid');
+        if (!summary || !container) return;
+
+        var TOP = 90;
+        var isFixed = false;
+        var naturalLeft = 0;
+        var naturalWidth = 0;
+
+        function captureNaturalPosition() {
+            if (!isFixed) {
+                var r = summary.getBoundingClientRect();
+                naturalLeft = r.left;
+                naturalWidth = r.width;
+            }
+        }
+
+        function stick() {
+            if (isFixed) return;
+            captureNaturalPosition();
+            summary.style.position = 'fixed';
+            summary.style.top = TOP + 'px';
+            summary.style.left = naturalLeft + 'px';
+            summary.style.width = naturalWidth + 'px';
+            summary.style.zIndex = '100';
+            isFixed = true;
+        }
+
+        function unstick() {
+            if (!isFixed) return;
+            summary.style.position = '';
+            summary.style.top = '';
+            summary.style.left = '';
+            summary.style.width = '';
+            summary.style.zIndex = '';
+            isFixed = false;
+        }
+
+        function onScroll() {
+            if (window.innerWidth <= 992) {
+                unstick();
+                return;
+            }
+            var containerRect = container.getBoundingClientRect();
+            var summaryH = summary.offsetHeight;
+
+            if (containerRect.top <= TOP) {
+                stick();
+                var remaining = containerRect.bottom - summaryH;
+                var newTop = remaining < TOP ? Math.max(remaining, containerRect.top) : TOP;
+                summary.style.top = newTop + 'px';
+            } else {
+                unstick();
+            }
+        }
+
+        function onResize() {
+            unstick();
+            setTimeout(function () {
+                captureNaturalPosition();
+                onScroll();
+            }, 50);
+        }
+
+        captureNaturalPosition();
+        onScroll();
+        window.addEventListener('scroll', onScroll, { passive: true });
+        window.addEventListener('resize', onResize);
+    })();
+
+});
+
+function applyCoupon() {
+    var input = document.getElementById('couponInput');
+    var msg = document.getElementById('couponMessage');
+    var code = (input.value || '').trim().toUpperCase();
+
+    if (!code) {
+        if (window.QHToast) QHToast.show('Vui lòng nhập mã giảm giá', 'error');
+        return;
+    }
+
+    var btn = document.getElementById('couponApplyBtn');
+    btn.disabled = true;
+    btn.textContent = 'Đang kiểm tra...';
+
+    fetch(window.QH_COUPON_APPLY_URL, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': window.QH_CSRF_TOKEN
+        },
+        body: JSON.stringify({
+            code: code,
+            order_total: window.QH_CHECKOUT_TOTAL,
+            item_count: window.QH_ITEM_COUNT || 0
+        })
+    })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            if (data.success) {
+                if (window.QHToast) QHToast.show('Đã áp dụng mã giảm giá thành công!', 'success');
+
+                window.QH_APPLIED_COUPON = data.code;
+                window.QH_DISCOUNT_AMOUNT = parseInt(data.discount);
+                window.QH_CHECKOUT_TOTAL = window.QH_CHECKOUT_TOTAL - window.QH_DISCOUNT_AMOUNT; // Cập nhật tổng tiền sau khi áp dụng giảm giá
+
+                var voucherEl = document.getElementById('summaryVoucher');
+                var discountEl = document.getElementById('summaryDiscount');
+                var totalEl = document.getElementById('summaryTotal');
+
+                if (voucherEl) voucherEl.textContent = data.code;
+                if (discountEl) discountEl.textContent = '-' + data.discount_display;
+                if (totalEl) totalEl.textContent = data.new_total_display;
+
+                input.disabled = true;
+                btn.textContent = 'Đã áp dụng';
+                btn.style.background = '#10b981';
+            } else {
+                if (window.QHToast) QHToast.show(data.message || 'Mã không hợp lệ', 'error');
+                btn.disabled = false;
+                btn.textContent = 'Áp dụng';
+            }
+        })
+        .catch(function () {
+            if (window.QHToast) QHToast.show('Lỗi kết nối, vui lòng thử lại', 'error');
+            btn.disabled = false;
+            btn.textContent = 'Áp dụng';
+        });
+}

@@ -1,0 +1,2045 @@
+/* Hide horizontal scrollbar globally */
+html {
+    overflow-x: hidden;
+    min-height: 100dvh; /* 100dvh = dynamic viewport height, fixes iOS Safari bottom-bar jump */
+    background: #fff;
+}
+body {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #fff;
+    width: 100%;
+}
+
+/* Overflow wrapper - chặn tràn ngang triệt để trên mọi trình duyệt */
+#qhPageWrap {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/*
+ * QHUN22 Mobile - Custom Styles
+ * Màu sắc thương hiệu: #A9CCF0 (xanh pastel), #D3BAFF (tím pastel)
+ * Font: Signika
+ */
+
+/* ==================== CUSTOM SCROLLBAR ==================== */
+/* Ẩn hoàn toàn thanh cuộn trên mọi thiết bị (PC & Mobile) nhưng vẫn cho phép cuộn trang bình thường */
+::-webkit-scrollbar,
+*::-webkit-scrollbar {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track {
+    background: transparent !important;
+    border: none !important;
+}
+
+html, body {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden !important;
+}
+
+/* CSS Variables - Brand Colors */
+:root {
+    --qh-primary: #b91c1c;
+    --qh-primary-hover: #991b1b;
+    --qh-primary-light: #fee2e2;
+    --qh-price: #b91c1c;
+    --qh-secondary: #fee2e2;
+    --qh-primary-dark: #991b1b;
+    --qh-secondary-dark: #991b1b;
+    --qh-text: #333333;
+    --qh-text-light: #666666;
+    --qh-bg: #FFFFFF;
+    --qh-white: #FFFFFF;
+    --qh-border: #EEEEEE;
+    --qh-shadow: rgba(0, 0, 0, 0.08);
+    --qh-radius: 12px;
+    --qh-radius-sm: 8px;
+    --qh-radius-lg: 16px;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+    background-color: #fff;
+    color: var(--qh-text);
+    line-height: 1.6;
+    min-height: 100dvh;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==================== HEADER STYLES ==================== */
+.qh-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+    background: var(--qh-white);
+    box-shadow: 0 2px 12px var(--qh-shadow);
+}
+
+/* Add padding to body to account for fixed header */
+body {
+    padding-top: 80px;
+}
+
+.qh-header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.qh-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    gap: 24px;
+}
+
+/* Logo */
+.qh-logo {
+    flex-shrink: 0;
+}
+
+.qh-logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Search Bar */
+.qh-search {
+    flex: 1;
+    max-width: 600px;
+    position: relative;
+}
+
+.qh-search-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--qh-primary);
+    border-radius: var(--qh-radius);
+    overflow: hidden;
+    background: #ffffff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.qh-search-form:focus-within {
+    border-color: var(--qh-primary);
+    box-shadow: none;
+}
+
+.qh-search-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 0;
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.qh-search-btn {
+    height: 48px;
+    padding: 0 16px;
+    border: none;
+    border-left: 1px solid var(--qh-primary);
+    border-radius: 0;
+    background: var(--qh-primary);
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+}
+
+.qh-search-input:focus {
+    outline: none;
+    background: var(--qh-white);
+    box-shadow: none;
+}
+
+.qh-search-input:focus-visible,
+.qh-search-btn:focus,
+.qh-search-btn:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.qh-search-input::placeholder {
+    color: #999;
+}
+
+/* Autocomplete Dropdown */
+.qh-autocomplete-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--qh-white);
+    border: 1px solid var(--qh-border);
+    border-top: none;
+    border-radius: 0 0 var(--qh-radius) var(--qh-radius);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 10001;
+    display: none;
+}
+
+.qh-autocomplete-list {
+    padding: 8px 0;
+}
+
+.qh-autocomplete-section {
+    padding: 4px 0;
+}
+
+.qh-autocomplete-section:not(:last-child) {
+    border-bottom: 1px solid var(--qh-border);
+}
+
+.qh-autocomplete-header {
+    padding: 8px 16px 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.qh-autocomplete-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: var(--qh-text);
+    transition: background 0.15s ease;
+    cursor: pointer;
+}
+
+.qh-autocomplete-item:hover,
+.qh-autocomplete-item.active {
+    background: #fef2f2;
+}
+
+.qh-autocomplete-product {
+    gap: 12px;
+}
+
+.qh-autocomplete-img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 8px;
+    background: #f5f5f5;
+}
+
+.qh-autocomplete-img-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+}
+
+.qh-autocomplete-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.qh-autocomplete-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--qh-text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.qh-autocomplete-name strong {
+    color: var(--qh-primary);
+}
+
+.qh-autocomplete-brand {
+    font-size: 12px;
+    color: #888;
+    margin-top: 2px;
+}
+
+.qh-autocomplete-price {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--qh-primary);
+    white-space: nowrap;
+}
+
+.qh-autocomplete-keyword {
+    gap: 10px;
+}
+
+.qh-autocomplete-icon {
+    width: 18px;
+    height: 18px;
+    color: #888;
+    flex-shrink: 0;
+}
+
+.qh-autocomplete-keyword-text {
+    font-size: 14px;
+    color: var(--qh-text);
+}
+
+.qh-autocomplete-keyword-text strong {
+    color: var(--qh-primary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qh-autocomplete-dropdown {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        max-height: 60vh;
+        border-radius: var(--qh-radius-lg) var(--qh-radius-lg) 0 0;
+        border-bottom: none;
+    }
+
+    .qh-autocomplete-product {
+        gap: 10px;
+    }
+
+    .qh-autocomplete-img,
+    .qh-autocomplete-img-placeholder {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.qh-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.qh-header-icon {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: var(--qh-radius);
+    color: var(--qh-text-light);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.qh-header-icon:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.qh-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--qh-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+/* Icon circle giữ nguyên màu nền khi hover */
+
+.qh-icon-svg {
+    width: 22px;
+    height: 22px;
+    color: var(--qh-text-light);
+    transition: all 0.3s ease;
+}
+
+.qh-header-icon:hover .qh-icon-svg {
+    color: var(--qh-text);
+}
+
+.qh-icon-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #dc2626;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-variant-numeric: tabular-nums;
+    border: 2px solid var(--qh-white);
+}
+
+.qh-icon-badge:empty::before {
+    content: '0';
+}
+
+.qh-header-icon--stat {
+    min-width: 150px;
+}
+
+.qh-header-icon--stat .qh-icon-text {
+    min-width: 76px;
+}
+
+.qh-icon-badge--stat {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 999px;
+}
+
+#qh-wishlist-count:empty::before,
+#qh-cart-count:empty::before,
+#qh-order-count:empty::before {
+    content: '0';
+}
+
+.qh-icon-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 70px;
+    transition: transform 0.2s ease;
+}
+
+.qh-header-icon:hover .qh-icon-text {
+    transform: translateY(-2px);
+}
+
+.qh-icon-label {
+    font-size: 11px;
+    color: #999;
+    transition: color 0.2s ease;
+}
+
+.qh-icon-title {
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.qh-header-icon:hover .qh-icon-label,
+.qh-header-icon:hover .qh-icon-title {
+    color: var(--qh-text);
+}
+
+/* ==================== BUTTON STYLES ==================== */
+.qh-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border-radius: var(--qh-radius);
+    font-family: 'Signika', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.qh-btn-primary {
+    background: linear-gradient(135deg, var(--qh-primary) 0%, var(--qh-secondary) 100%);
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.qh-btn-primary:hover {
+    transform: translateY(-2px);
+    background: #b91c1c;
+    color: #ffffff;
+    border-color: #b91c1c;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.28);
+}
+
+.qh-btn-secondary {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.qh-btn-secondary:hover {
+    transform: translateY(-2px);
+    background: #991b1b;
+    color: #ffffff;
+    border-color: #991b1b;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.3);
+}
+
+.qh-btn-danger {
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    color: var(--qh-white);
+}
+
+.qh-btn-danger:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
+}
+
+.qh-btn-outline {
+    background: transparent;
+    color: var(--qh-text);
+    border: 1px solid var(--qh-border);
+}
+
+.qh-btn-outline:hover {
+    background: var(--qh-primary);
+    border-color: var(--qh-primary);
+    color: var(--qh-text);
+}
+
+/* ==================== PRODUCT CARD HOVER ==================== */
+.qh-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.qh-product-card:hover .qh-quick-actions {
+    opacity: 1;
+}
+
+/* ==================== OTP BUTTON STYLES ==================== */
+.qh-otp-group {
+    display: flex;
+    gap: 8px;
+}
+
+.qh-otp-group .qh-input {
+    flex: 1;
+}
+
+.qh-otp-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, var(--qh-primary) 0%, var(--qh-secondary) 100%);
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+    border: none;
+    border-radius: var(--qh-radius);
+    font-family: var(--qh-font);
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.qh-otp-btn:hover:not(:disabled) {
+    transform: translateY(-2px);
+    background: #b91c1c;
+    color: #ffffff;
+    border-color: #b91c1c;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.25);
+}
+
+.qh-otp-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: #ccc;
+}
+
+.qh-otp-message {
+    padding: 10px 15px;
+    border-radius: var(--qh-radius);
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.qh-otp-message.success {
+    background: rgba(34, 197, 94, 0.1);
+    color: #16a34a;
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.qh-otp-message.error {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+}
+
+/* ==================== CARD STYLES ==================== */
+.qh-card {
+    background: var(--qh-white);
+    border-radius: var(--qh-radius);
+    box-shadow: 0 4px 16px var(--qh-shadow);
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.qh-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px var(--qh-shadow);
+}
+
+/* ==================== TOAST NOTIFICATIONS ==================== */
+.qh-toast-container {
+    position: fixed;
+    top: 90px;
+    right: 24px;
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.qh-toast {
+    background: var(--qh-white);
+    border-radius: var(--qh-radius);
+    box-shadow: 0 8px 32px var(--qh-shadow);
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 300px;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qh-toast-show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.qh-toast-hide {
+    opacity: 0;
+    transform: translateX(120%);
+}
+
+.qh-toast-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.qh-toast-text {
+    flex: 1;
+    font-size: 14px;
+    color: var(--qh-text);
+    line-height: 1.4;
+}
+
+.qh-toast-success {
+    border-left: 4px solid #22c55e;
+}
+
+.qh-toast-success .qh-toast-icon {
+    color: #22c55e;
+}
+
+.qh-toast-error {
+    border-left: 4px solid #ef4444;
+}
+
+.qh-toast-error .qh-toast-icon {
+    color: #ef4444;
+}
+
+.qh-toast-warning {
+    border-left: 4px solid #f59e0b;
+}
+
+.qh-toast-warning .qh-toast-icon {
+    color: #f59e0b;
+}
+
+/* ===== TOAST MOBILE ===== */
+@media (max-width: 768px) {
+    .qh-toast-container {
+        top: 76px;
+        right: 12px;
+        left: 12px;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .qh-toast {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        padding: 12px 14px;
+        gap: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+        transform: translateY(-16px);
+        opacity: 0;
+    }
+
+    .qh-toast-show {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .qh-toast-hide {
+        opacity: 0;
+        transform: translateY(-12px);
+    }
+
+    .qh-toast-text {
+        font-size: 13px;
+    }
+
+    .qh-toast-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* ==================== MODAL STYLES ==================== */
+.qh-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 30000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.qh-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.qh-modal-content {
+    background: var(--qh-white);
+    border-radius: var(--qh-radius-lg);
+    padding: 32px;
+    max-width: 450px;
+    width: 90%;
+    transform: scale(0.9);
+    transition: all 0.3s ease;
+}
+
+.qh-modal.active .qh-modal-content {
+    transform: scale(1);
+}
+
+.qh-modal-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+.qh-modal-text {
+    color: var(--qh-text-light);
+    margin-bottom: 24px;
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .qh-header-inner {
+        gap: 16px;
+    }
+
+    .qh-search {
+        max-width: 400px;
+    }
+
+    .qh-icon-text {
+        display: none;
+    }
+
+    .qh-header-icon {
+        padding: 10px;
+    }
+
+    .qh-header-icon--stat {
+        min-width: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 70px;
+    }
+
+    .qh-header-container {
+        padding: 0 16px;
+    }
+
+    .qh-header-inner {
+        height: 70px;
+        flex-wrap: wrap;
+    }
+
+    .qh-logo-img {
+        height: 40px;
+    }
+
+    .qh-search {
+        order: 3;
+        max-width: 100%;
+        flex-basis: 100%;
+        margin-top: 12px;
+    }
+
+    .qh-header-actions {
+        gap: 4px;
+    }
+}
+
+/* ==================== FORMS ==================== */
+.qh-form-group {
+    margin-bottom: 20px;
+}
+
+.qh-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    color: var(--qh-text);
+}
+
+.qh-input {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    border: 2px solid var(--qh-border);
+    border-radius: var(--qh-radius);
+    font-family: 'Signika', sans-serif;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.qh-input:focus {
+    outline: none;
+    border-color: var(--qh-primary);
+}
+
+/* ==================== USP SECTION ==================== */
+.qh-usp-section {
+    background: #fff;
+    padding: 24px 0 32px;
+    margin-top: 10px;
+}
+
+.qh-usp-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Cách xa nhẹ tiêu đề "TẠI SAO NÊN CHỌN CHÚNG TÔI?" với grid bên dưới */
+.qh-usp-container .qh-featured-title-wrap {
+    margin-bottom: 18px;
+}
+
+.qh-usp-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--qh-text);
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+}
+
+.qh-usp-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+}
+
+/* Card không bọc box, chỉ là khối nội dung trên nền section */
+.qh-usp-card {
+    background: transparent;
+    padding: 0;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.qh-usp-card:hover {
+    transform: none;
+}
+
+/* Icon: ô vuông trắng bo góc, đổ bóng nhẹ (giống ảnh design) */
+.qh-usp-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    background: var(--qh-white);
+    border-radius: var(--qh-radius);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.qh-usp-card:hover .qh-usp-icon {
+    transform: scale(1.05);
+}
+
+.qh-usp-icon svg {
+    width: 26px;
+    height: 26px;
+    stroke: #b91c1c;
+}
+
+.qh-usp-card-title {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--qh-text);
+    margin-bottom: 6px;
+}
+
+.qh-usp-card-desc {
+    font-size: 14px;
+    color: var(--qh-text-light);
+    line-height: 1.5;
+}
+
+/* ==================== FOOTER (COOLMATE style) ==================== */
+.qh-footer {
+    margin-top: 0;
+    background: #0f172a;
+}
+
+.qh-footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ----- Top: NHẬN TƯ VẤN | LIÊN HỆ | KẾT NỐI (đồng bộ: nền đen, 3 cột) ----- */
+.qh-footer-top {
+    padding: 30px 0;
+    background: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.qh-footer-top-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 32px;
+}
+
+/* Tiêu đề chung cho 3 cột: bold, uppercase, màu trắng */
+.qh-footer-feedback-title,
+.qh-footer-block-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 12px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.qh-footer-feedback-desc {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    max-width: 420px;
+}
+
+/* Form: 1 hộp ghép - input trái (lớn) + nút phải (nhỏ), đen-trắng */
+.qh-footer-feedback-form {
+    display: flex;
+    gap: 0;
+    max-width: 420px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.qh-footer-feedback-input {
+    flex: 1;
+    padding: 12px 16px;
+    border: none;
+    border-right: 1px solid #fff;
+    background: #000;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Signika', sans-serif;
+    outline: none;
+}
+
+.qh-footer-feedback-input::placeholder {
+    color: #9ca3af;
+}
+
+.qh-footer-feedback-input:focus {
+    background: #000;
+}
+
+.qh-footer-feedback-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: #fff;
+    color: #000;
+    border: none;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    font-family: 'Signika', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    position: relative;
+}
+
+.qh-footer-feedback-btn:hover:not(:disabled) {
+    background: #e5e5e5;
+}
+
+.qh-footer-feedback-btn-arrow {
+    color: #000;
+}
+
+.qh-footer-feedback-btn:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+.qh-footer-feedback-btn .qh-newsletter-spinner {
+    display: none;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(15, 23, 42, 0.2);
+    border-top-color: #0f172a;
+    border-radius: 50%;
+    animation: qh-newsletter-spin 0.7s linear infinite;
+}
+
+.qh-footer-feedback-btn .qh-footer-feedback-btn-arrow {
+    margin-left: 2px;
+}
+
+/* Giữa: LIÊN HỆ - icon tròn xám nhạt trên nền đen */
+.qh-footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-self: center;
+}
+
+.qh-footer-contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qh-footer-contact-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.qh-footer-contact-label {
+    display: block;
+    font-size: 13px;
+    color: #94a3b8;
+    margin-bottom: 2px;
+}
+
+.qh-footer-contact-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.qh-footer-contact-value:hover {
+    color: var(--qh-primary);
+}
+
+/* Phải: KẾT NỐI VỚI CHÚNG TÔI - 4 icon tròn xám nhạt */
+.qh-footer-social-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.qh-footer-social-block .qh-footer-block-title {
+    margin-bottom: 16px;
+}
+
+.qh-footer-social-circles {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.qh-footer-social-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #1f2937;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #94a3b8;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s;
+}
+
+.qh-footer-social-circle:hover {
+    background: #374151;
+    color: #fff;
+}
+
+/* ----- Giữa: Cột liên kết (design: nền đen, title trắng, link xám, 5 cột, nhóm phụ) ----- */
+.qh-footer-mid {
+    padding: 48px 0 40px;
+    background: #000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.qh-footer-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 40px 48px;
+    text-align: left;
+}
+
+.qh-footer-col-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 20px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.qh-footer-col-subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    margin: 28px 0 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.qh-footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.qh-footer-nav a {
+    font-size: 14px;
+    color: #cbd5e1;
+    text-decoration: none;
+    line-height: 1.5;
+    transition: color 0.2s;
+}
+
+.qh-footer-nav a:hover {
+    color: #fff;
+}
+
+.qh-footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.qh-footer-address-block,
+.qh-footer-address p {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ----- Đáy: Copyright + Badges ----- */
+/* Badge Bộ Công Thương: nằm dưới Địa chỉ liên hệ (trong cột đen) */
+.qh-footer-badges {
+    margin-top: 20px;
+}
+
+.qh-footer-badge-img {
+    height: 32px;
+    width: auto;
+    max-width: 90px;
+    object-fit: contain;
+    opacity: 0.95;
+    transition: opacity 0.3s ease;
+    display: block;
+}
+
+.qh-footer-badge-img:hover {
+    opacity: 1;
+}
+
+/* Đáy footer: chỉ Copyright, căn giữa, nền đen (đồng bộ với phần giữa) */
+.qh-footer-bottom {
+    background: #000;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.qh-footer-bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qh-footer-copyright {
+    text-align: center;
+}
+
+.qh-footer-copyright p {
+    font-size: 13px;
+    color: #94a3b8;
+    margin: 0;
+}
+
+.qh-footer-badge {
+    font-size: 11px;
+    color: #64748b;
+    padding: 4px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+@keyframes qh-newsletter-spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* ----- Footer Responsive ----- */
+@media (max-width: 1024px) {
+    .qh-footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    /* === FOOTER TOP === */
+    .qh-footer-top {
+        padding: 28px 0 24px;
+    }
+
+    /* 3 cột → 1 cột, mỗi phần căn giữa */
+    .qh-footer-top-inner {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        text-align: center;
+    }
+
+    /* Cột 1: NHẬN TƯ VẤN */
+    .qh-footer-feedback-desc {
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .qh-footer-feedback-form {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .qh-footer-feedback-input {
+        border-right: none;
+        border-bottom: 1px solid #fff;
+        text-align: left;
+    }
+
+    .qh-footer-feedback-btn {
+        border-radius: 0;
+        justify-content: center;
+    }
+
+    /* Cột 2: LIÊN HỆ — full width, căn giữa, icon+text xếp cột */
+    .qh-footer-contact-block {
+        justify-self: stretch;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .qh-footer-contact-row {
+        justify-content: center;
+    }
+
+    /* Cột 3: KẾT NỐI — full width, căn giữa */
+    .qh-footer-social-block {
+        justify-self: stretch;
+        align-items: center;
+    }
+
+    /* === FOOTER MID === */
+    .qh-footer-mid {
+        padding: 32px 0 24px;
+    }
+
+    .qh-footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 20px;
+    }
+
+    .qh-footer-col-subtitle {
+        margin-top: 20px;
+    }
+
+    /* === FOOTER BOTTOM === */
+    .qh-footer-bottom-inner {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .qh-footer-copyright {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .qh-footer-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+}
+
+/* Nút cuộn lên: bên phải, phía trên thanh contact đỏ */
+.qh-scroll-top {
+    position: fixed;
+    right: 24px;
+    bottom: 80px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--qh-primary));
+    color: var(--qh-text);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(185, 28, 28, 0.28);
+    transition: transform 0.2s, opacity 0.3s, box-shadow 0.2s;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.qh-scroll-top.qh-scroll-top--visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.qh-scroll-top:hover {
+    transform: scale(1.08);
+    background: #b91c1c;
+    color: #ffffff;
+    box-shadow: 0 6px 24px rgba(185, 28, 28, 0.35);
+}
+
+/* Nút Zalo: đồng bộ cùng style */
+.qh-zalo-fab {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--qh-primary));
+    color: var(--qh-text);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(185, 28, 28, 0.28);
+    transition: transform 0.2s, box-shadow 0.2s;
+    z-index: 9998;
+    text-decoration: none;
+}
+
+.qh-zalo-fab:hover {
+    transform: scale(1.08);
+    background: #b91c1c;
+    color: #ffffff;
+    box-shadow: 0 6px 24px rgba(185, 28, 28, 0.35);
+}
+
+@media (max-width: 768px) {
+    .qh-scroll-top {
+        right: 16px;
+        bottom: 72px;
+        width: 46px;
+        height: 46px;
+        font-size: 22px;
+    }
+
+    .qh-zalo-fab {
+        right: 16px;
+        bottom: 16px;
+        width: 46px;
+        height: 46px;
+        font-size: 22px;
+    }
+}
+
+/* ==================== USP + FOOTER RESPONSIVE ==================== */
+@media (max-width: 1024px) {
+    .qh-usp-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .qh-usp-section {
+        padding: 16px 0 24px;
+        margin-top: 0;
+    }
+
+    .qh-usp-title {
+        font-size: 20px;
+        margin-bottom: 28px;
+    }
+
+    .qh-usp-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .qh-usp-card {
+        padding: 0;
+    }
+}
+
+/* ==================== MAIN CONTENT ==================== */
+.qh-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 40px 24px;
+    min-height: calc(100vh - 200px);
+    background: #fff;
+}
+
+@media (max-width: 768px) {
+    .qh-main {
+        padding: 12px 10px;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+}
+
+.qh-page-title {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--qh-text);
+}
+
+/* ==================== STUDENT-TEACHER VERIFICATION STYLES ==================== */
+.qh-pf-student {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Split Layout - 2 Columns */
+.qh-pf-student-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.qh-pf-student-left,
+.qh-pf-student-right {
+    background: var(--qh-white);
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.qh-pf-student-col-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--qh-text);
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--qh-primary);
+}
+
+/* Empty State */
+.qh-pf-student-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 16px;
+    color: #94a3b8;
+    text-align: center;
+}
+
+.qh-pf-student-empty svg {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+}
+
+.qh-pf-student-empty p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Header Section */
+.qh-pf-student-header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.qh-pf-student-header-icon {
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.qh-pf-student-header-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #b91c1c;
+}
+
+.qh-pf-student-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--qh-text);
+    margin-bottom: 8px;
+}
+
+.qh-pf-student-desc {
+    color: var(--qh-text-light);
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.qh-pf-student-desc strong {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+/* Success Badge */
+.qh-pf-student-success {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* Status Badge - Green check */
+.qh-pf-student-status-badge {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #d1fae5;
+    border: 1px solid #6ee7b7;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: #065f46;
+    font-weight: 500;
+}
+
+.qh-pf-student-status-badge svg {
+    width: 20px;
+    height: 20px;
+    color: #059669;
+    flex-shrink: 0;
+}
+
+/* Description */
+.qh-pf-student-desc {
+    color: var(--qh-text-light);
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.qh-pf-student-desc strong {
+    color: #b91c1c;
+    font-weight: 600;
+}
+
+.qh-pf-student-success-icon {
+    width: 24px;
+    height: 24px;
+    color: #059669;
+    flex-shrink: 0;
+}
+
+.qh-pf-student-success-text {
+    color: #059669;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.qh-pf-student-success-text strong {
+    font-weight: 600;
+}
+
+/* Verified Email Display */
+.qh-pf-student-verified {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 1px solid #86efac;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.qh-pf-student-verified-icon {
+    width: 48px;
+    height: 48px;
+    background: #d1fae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.qh-pf-student-verified-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #059669;
+}
+
+.qh-pf-student-verified-title {
+    color: #059669;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.qh-pf-student-verified-email {
+    color: #166534;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Voucher Grid */
+.qh-pf-student-voucher-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.qh-pf-student-voucher-status {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+}
+
+.qh-pf-student-voucher-status-icon {
+    width: 48px;
+    height: 48px;
+    background: #d1fae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 12px;
+}
+
+.qh-pf-student-voucher-status-icon svg {
+    width: 24px;
+    height: 24px;
+    color: #059669;
+}
+
+.qh-pf-student-voucher-status-title {
+    color: #059669;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.qh-pf-student-voucher-status-desc {
+    color: #166534;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Voucher Code Card */
+.qh-pf-student-voucher-code {
+    background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.qh-pf-student-voucher-code::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.08'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.qh-pf-student-voucher-code-title {
+    font-size: 13px;
+    opacity: 0.9;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-discount {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-limit {
+    font-size: 12px;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-box {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+    padding: 8px;
+    display: inline-block;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-label {
+    font-size: 11px;
+    opacity: 0.8;
+    margin-bottom: 2px;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-value {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.qh-pf-student-voucher-code-expire {
+    font-size: 11px;
+    opacity: 0.7;
+    margin-top: 8px;
+    position: relative;
+}
+
+/* Voucher Used Status */
+.qh-pf-student-voucher-used {
+    background: #fef3c7;
+    border: 1px solid #fcd34d;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qh-pf-student-voucher-used-icon {
+    width: 20px;
+    height: 20px;
+    color: #d97706;
+    flex-shrink: 0;
+}
+
+.qh-pf-student-voucher-used-text {
+    color: #92400e;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.qh-pf-student-voucher-used-desc {
+    margin: 8px 0 0 0;
+    color: #b45309;
+    font-size: 13px;
+}
+
+/* Voucher Expired Status */
+.qh-pf-student-voucher-expired {
+    background: #fee2e2;
+    border: 1px solid #fecaca;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.qh-pf-student-voucher-expired-icon {
+    width: 20px;
+    height: 20px;
+    color: #dc2626;
+    flex-shrink: 0;
+}
+
+.qh-pf-student-voucher-expired-text {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Form Card */
+.qh-pf-student-form {
+    background: var(--qh-white);
+    border: 1px solid var(--qh-border);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+.qh-pf-student-form-group {
+    margin-bottom: 20px;
+}
+
+.qh-pf-student-form-group:last-of-type {
+    margin-bottom: 0;
+}
+
+.qh-pf-student-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--qh-text);
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.qh-pf-student-input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--qh-border);
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: all 0.3s ease;
+    background: var(--qh-white);
+    color: var(--qh-text);
+}
+
+.qh-pf-student-input:focus {
+    outline: none;
+    border-color: var(--qh-primary);
+    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.16);
+}
+
+.qh-pf-student-input::placeholder {
+    color: #9ca3af;
+}
+
+/* OTP Input with letter spacing */
+.qh-pf-student-input-otp {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid var(--qh-border);
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 6px;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: 'Signika', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    transition: all 0.3s ease;
+    background: var(--qh-white);
+    color: var(--qh-text);
+}
+
+.qh-pf-student-input-otp:focus {
+    outline: none;
+    border-color: var(--qh-primary);
+    box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.16);
+}
+
+.qh-pf-student-input-otp::placeholder {
+    color: #d1d5db;
+    letter-spacing: 2px;
+}
+
+/* Message Display */
+.qh-pf-student-message {
+    margin-bottom: 16px;
+    font-size: 14px;
+    min-height: 20px;
+}
+
+.qh-pf-student-message.error {
+    color: #dc2626;
+    background: rgba(239, 68, 68, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.qh-pf-student-message.success {
+    color: #059669;
+    background: rgba(5, 150, 105, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+.qh-pf-student-message.info {
+    color: #b91c1c;
+    background: rgba(185, 28, 28, 0.1);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(185, 28, 28, 0.2);
+}
+
+/* Buttons */
+.qh-pf-student-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Signika', sans-serif;
+}
+
+.qh-pf-student-btn-primary {
+    background: linear-gradient(135deg, var(--qh-primary) 0%, var(--qh-secondary) 100%);
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.qh-pf-student-btn-primary:hover {
+    transform: translateY(-2px);
+    background: #b91c1c;
+    color: #ffffff;
+    border-color: #b91c1c;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.35);
+}
+
+.qh-pf-student-btn-secondary {
+    background: var(--qh-primary);
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}
+
+.qh-pf-student-btn-secondary:hover {
+    transform: translateY(-2px);
+    background: #b91c1c;
+    color: #ffffff;
+    border-color: #b91c1c;
+    box-shadow: 0 6px 20px rgba(185, 28, 28, 0.28);
+}
+
+.qh-pf-student-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .qh-pf-student-split {
+        grid-template-columns: 1fr;
+    }
+
+    .qh-pf-student-voucher-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .qh-pf-student-title {
+        font-size: 20px;
+    }
+
+    .qh-pf-student-form {
+        padding: 20px;
+    }
+}
