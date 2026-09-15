@@ -11,6 +11,73 @@
 	width: calc((100% - 48px) / 5);
 }
 
+.qh-product-card {
+	display: block;
+	color: inherit;
+	text-decoration: none;
+	background: var(--qh-white);
+	border: 1px solid #e5e5e5;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+.qh-product-card .qh-product-image {
+	position: relative;
+	aspect-ratio: 1;
+	background: #fff;
+	overflow: hidden;
+}
+
+.qh-product-card .qh-product-image > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.qh-product-card .qh-product-info {
+	padding: 12px 14px 14px;
+	border-top: 1px solid #f0f0f0;
+}
+
+.qh-product-card .qh-product-name {
+	min-height: 44px;
+	margin-bottom: 4px;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	line-clamp: 2;
+	-webkit-box-orient: vertical;
+	font-size: 17px;
+	font-weight: 600;
+	line-height: 1.4;
+	color: var(--qh-text);
+}
+
+.qh-product-card .qh-product-status {
+	display: flex;
+	gap: 6px;
+	margin-bottom: 10px;
+}
+
+.qh-product-card .status-tag {
+	flex: 1;
+	padding: 4px 8px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+}
+
+.qh-product-card .status-tag.in-stock {
+	color: #059669;
+	background: #d1fae5;
+}
+
+.qh-product-card .status-tag.installment {
+	color: #d97706;
+	background: #fef3c7;
+}
+
 .qh-review-track .qh-review-card {
 	flex: 0 0 calc((100% - 64px) / 5);
 	width: calc((100% - 64px) / 5);

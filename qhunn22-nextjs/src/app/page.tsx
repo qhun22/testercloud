@@ -490,7 +490,8 @@ export default function Home() {
                 alt=""
                 className="qh-hotsale-corner qh-hotsale-corner--br"
               />
-              <div className="qh-hotsale-slider-wrap">
+              <div className="qh-hs-panel" id="qhPanelSuggested">
+                <div className="qh-hotsale-slider-wrap">
                 <button
                   className="qh-slider-nav qh-hotsale-nav prev"
                   aria-label="Trang trước"
@@ -525,6 +526,7 @@ export default function Home() {
                 >
                   <Arrow direction="right" />
                 </button>
+                </div>
               </div>
             </div>
           </section>
@@ -610,7 +612,6 @@ export default function Home() {
               <a href="#products" className="qh-product-card" key={name}>
                 <div className="qh-product-image">
                   <img src={image} alt={name} />
-                  <div className="discount-badge">-8%</div>
                   <button
                     className={`wishlist-btn ${liked.includes(name) ? "liked" : ""}`}
                     onClick={(event) => toggleLiked(name, event)}
