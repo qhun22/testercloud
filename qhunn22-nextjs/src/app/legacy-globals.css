@@ -5,6 +5,7 @@
 @import "./legacy-css/contact-bar.css";
 @import "./legacy-css/mobile-header.css";
 @import "./legacy-css/home.css";
+@import "./legacy-css/product_detail.css";
 
 .qh-hotsale-track .qh-hotsale-card {
 	flex: 0 0 calc((100% - 48px) / 5);
