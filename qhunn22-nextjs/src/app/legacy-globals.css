@@ -78,6 +78,32 @@
 	background: #fef3c7;
 }
 
+.qh-product-card .qh-cart-quick-btn,
+.qh-product-card .qh-compare-btn {
+	flex: 1;
+	min-width: 0;
+	padding: 8px 4px;
+	font-size: 12px;
+	line-height: 1.4;
+	border-radius: 6px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
+
+.qh-product-card .qh-cart-quick-btn {
+	border: 1px solid #b91c1c;
+	color: #fff;
+	background: #b91c1c;
+}
+
+.qh-product-card .qh-compare-btn {
+	border: 1px solid var(--qh-border);
+	color: var(--qh-text);
+	background: transparent;
+}
+
 .qh-review-track .qh-review-card {
 	flex: 0 0 calc((100% - 64px) / 5);
 	width: calc((100% - 64px) / 5);

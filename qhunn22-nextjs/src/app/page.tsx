@@ -27,6 +27,16 @@ const hotSaleProducts = homeData.hotSaleProducts.map(
       item.image,
     ] as [string, string, string, string],
 );
+const suggestedProducts = homeData.suggestedProducts.map(
+  (item) =>
+    [
+      item.name,
+      formatPrice(item.price),
+      item.originalPrice ? formatPrice(item.originalPrice) : "",
+      item.image,
+    ] as [string, string, string, string],
+);
+const bestSellerProducts = products;
 const reviewVideos = [
   "l-FBAfNRoCo",
   "WoRySc2P4KM",
@@ -119,6 +129,12 @@ export default function Home() {
         : [...current, name],
     );
   };
+  const activeHotSaleProducts =
+    hotSaleTab === "suggested"
+      ? suggestedProducts
+      : hotSaleTab === "bestseller"
+        ? bestSellerProducts
+        : hotSaleProducts;
 
   return (
     <div id="qhPageWrap">
@@ -432,7 +448,10 @@ export default function Home() {
                     <button
                       className={`qh-hotsale-tab ${hotSaleTab === value ? "active" : ""}`}
                       data-tab={value}
-                      onClick={() => setHotSaleTab(value)}
+                      onClick={() => {
+                        setHotSaleTab(value);
+                        setHotSaleIndex(0);
+                      }}
                       key={value}
                     >
                       <span>{label}</span>
@@ -501,7 +520,7 @@ export default function Home() {
                 </button>
                 <div className="qh-hotsale-overflow">
                   <div className="qh-hotsale-track" style={{ transform: `translateX(-${hotSaleIndex * 20.8}%)` }}>
-                    {hotSaleProducts.map(([name, price, old, image]) => (
+                    {activeHotSaleProducts.map(([name, price, old, image]) => (
                       <a className="qh-hotsale-card" href="#products" key={name}>
                         <div className="qh-hotsale-card-img">
                           <img src={image} alt={name} />
@@ -522,7 +541,7 @@ export default function Home() {
                 <button
                   className="qh-slider-nav qh-hotsale-nav next"
                   aria-label="Trang sau"
-                  onClick={() => setHotSaleIndex((current) => Math.min(Math.max(0, hotSaleProducts.length - 5), current + 1))}
+                  onClick={() => setHotSaleIndex((current) => Math.min(Math.max(0, activeHotSaleProducts.length - 5), current + 1))}
                 >
                   <Arrow direction="right" />
                 </button>
