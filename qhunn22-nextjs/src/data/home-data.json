@@ -1,0 +1,549 @@
+{
+  "brands": [
+    {
+      "id": 25,
+      "name": "APPLE",
+      "slug": "apple",
+      "logo": "logo_iphone_ngang_eac93ff477.webp"
+    },
+    {
+      "id": 39,
+      "name": "BENCO",
+      "slug": "benco",
+      "logo": "logo_benco_ngang_d31d9c3b77.webp"
+    },
+    {
+      "id": 36,
+      "name": "HONOR",
+      "slug": "honor",
+      "logo": "logo_honor_ngang_814fca59e4.webp"
+    },
+    {
+      "id": 27,
+      "name": "OPPO",
+      "slug": "oppo",
+      "logo": "logo_oppo_ngang_68d31fcd73.webp"
+    },
+    {
+      "id": 35,
+      "name": "REALME",
+      "slug": "realme",
+      "logo": "logo_realme_ngang_0185815a13.webp"
+    },
+    {
+      "id": 37,
+      "name": "RED MAGIC",
+      "slug": "red-magic",
+      "logo": "logo_redmagic_ngang_505d29c537.webp"
+    },
+    {
+      "id": 26,
+      "name": "SAMSUNG",
+      "slug": "samsung",
+      "logo": "logo_samsung_ngang_1624d75bd8.webp"
+    },
+    {
+      "id": 38,
+      "name": "TECNO",
+      "slug": "tecno",
+      "logo": "logo_tecno_ngang_c587e5f1fa.webp"
+    },
+    {
+      "id": 34,
+      "name": "VIVO",
+      "slug": "vivo",
+      "logo": "logo_vivo_ngang_45494ff733.webp"
+    },
+    {
+      "id": 28,
+      "name": "XIAOMI",
+      "slug": "xiaomi",
+      "logo": "logo_xiaomi_ngang_0faf267234.webp"
+    }
+  ],
+  "products": [
+    {
+      "id": 49,
+      "name": "RedMagic 10S Pro",
+      "slug": "redmagic-10s-pro",
+      "image": "/media/products/2026/03/1324231.png",
+      "price": 14790000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    },
+    {
+      "id": 48,
+      "name": "RedMagic 11 Pro",
+      "slug": "redmagic-11-pro",
+      "image": "/media/products/2026/03/51235123.png",
+      "price": 18890000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    },
+    {
+      "id": 47,
+      "name": "Realme 13+",
+      "slug": "realme-13-5g",
+      "image": "/media/products/2026/03/24144234.png",
+      "price": 7455000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "REALME"
+    },
+    {
+      "id": 46,
+      "name": "OPPO Reno15",
+      "slug": "oppo-reno15-5g",
+      "image": "/media/products/2026/03/34252.png",
+      "price": 15855000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "OPPO"
+    },
+    {
+      "id": 45,
+      "name": "Honor 400 Pro",
+      "slug": "honor-400-5g",
+      "image": "/media/products/2026/03/125352.png",
+      "price": 14240000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 4,
+      "brand": "HONOR"
+    },
+    {
+      "id": 44,
+      "name": "Benco S1 Pro",
+      "slug": "benco-s1-pro",
+      "image": "/media/products/2026/03/3251235.png",
+      "price": 5025000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "BENCO"
+    },
+    {
+      "id": 43,
+      "name": "Xiaomi 15T Pro",
+      "slug": "xiaomi-15t-5g",
+      "image": "/media/products/2026/03/215235.png",
+      "price": 18515000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "XIAOMI"
+    },
+    {
+      "id": 42,
+      "name": "Xiaomi 14T Pro",
+      "slug": "xiaomi-14t-pro",
+      "image": "/media/products/2026/03/635634645.png",
+      "price": 15920000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 16,
+      "brand": "XIAOMI"
+    },
+    {
+      "id": 41,
+      "name": "Tecno Camon 40 Pro",
+      "slug": "tecno-camon-30",
+      "image": "/media/products/2026/03/45745735.png",
+      "price": 5300000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "TECNO"
+    },
+    {
+      "id": 40,
+      "name": "Samsung Galaxy S26",
+      "slug": "samsung-galaxy-s26",
+      "image": "/media/products/2026/03/2345345.png",
+      "price": 24690000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 13,
+      "brand": "SAMSUNG"
+    },
+    {
+      "id": 39,
+      "name": "Samsung Galaxy S26 Ultra",
+      "slug": "samsung-galaxy-s26-ultra",
+      "image": "/media/products/2026/03/9235251.png",
+      "price": 35140000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 19,
+      "brand": "SAMSUNG"
+    },
+    {
+      "id": 38,
+      "name": "iPhone 16 Plus",
+      "slug": "iphone-16-plus",
+      "image": "/media/products/2026/03/iphone-16-plus-den-1_1.webp",
+      "price": 23390000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 27,
+      "brand": "APPLE"
+    },
+    {
+      "id": 37,
+      "name": "iPhone 13",
+      "slug": "iphone-13",
+      "image": "/media/products/2026/03/iphone-13-trang-1.webp",
+      "price": 16460000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 16,
+      "brand": "APPLE"
+    },
+    {
+      "id": 36,
+      "name": "iPhone 14",
+      "slug": "iphone-14",
+      "image": "/media/products/2026/03/yterb.png",
+      "price": 17990000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "APPLE"
+    },
+    {
+      "id": 35,
+      "name": "iPhone 14 Pro Max",
+      "slug": "iphone-14-pro-max",
+      "image": "/media/products/2026/03/fasdca.png",
+      "price": 26990000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "APPLE"
+    }
+  ],
+  "suggestedProducts": [
+    {
+      "id": 49,
+      "name": "RedMagic 10S Pro",
+      "slug": "redmagic-10s-pro",
+      "image": "/media/products/2026/03/1324231.png",
+      "price": 14790000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    },
+    {
+      "id": 48,
+      "name": "RedMagic 11 Pro",
+      "slug": "redmagic-11-pro",
+      "image": "/media/products/2026/03/51235123.png",
+      "price": 18890000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    },
+    {
+      "id": 47,
+      "name": "Realme 13+",
+      "slug": "realme-13-5g",
+      "image": "/media/products/2026/03/24144234.png",
+      "price": 7455000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "REALME"
+    },
+    {
+      "id": 46,
+      "name": "OPPO Reno15",
+      "slug": "oppo-reno15-5g",
+      "image": "/media/products/2026/03/34252.png",
+      "price": 15855000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "OPPO"
+    },
+    {
+      "id": 45,
+      "name": "Honor 400 Pro",
+      "slug": "honor-400-5g",
+      "image": "/media/products/2026/03/125352.png",
+      "price": 14240000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 4,
+      "brand": "HONOR"
+    },
+    {
+      "id": 44,
+      "name": "Benco S1 Pro",
+      "slug": "benco-s1-pro",
+      "image": "/media/products/2026/03/3251235.png",
+      "price": 5025000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "BENCO"
+    },
+    {
+      "id": 43,
+      "name": "Xiaomi 15T Pro",
+      "slug": "xiaomi-15t-5g",
+      "image": "/media/products/2026/03/215235.png",
+      "price": 18515000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "XIAOMI"
+    },
+    {
+      "id": 42,
+      "name": "Xiaomi 14T Pro",
+      "slug": "xiaomi-14t-pro",
+      "image": "/media/products/2026/03/635634645.png",
+      "price": 15920000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 16,
+      "brand": "XIAOMI"
+    },
+    {
+      "id": 41,
+      "name": "Tecno Camon 40 Pro",
+      "slug": "tecno-camon-30",
+      "image": "/media/products/2026/03/45745735.png",
+      "price": 5300000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "TECNO"
+    },
+    {
+      "id": 40,
+      "name": "Samsung Galaxy S26",
+      "slug": "samsung-galaxy-s26",
+      "image": "/media/products/2026/03/2345345.png",
+      "price": 24690000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 13,
+      "brand": "SAMSUNG"
+    }
+  ],
+  "hotSaleProducts": [
+    {
+      "id": 30,
+      "name": "iPhone Air",
+      "slug": "iphone-air",
+      "image": "/media/products/2026/02/iphone-air-sky-blue-pdp-image-position-1-sky-blue-color-vn-vi.webp",
+      "price": 25590000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 12,
+      "brand": "APPLE"
+    },
+    {
+      "id": 37,
+      "name": "iPhone 13",
+      "slug": "iphone-13",
+      "image": "/media/products/2026/03/iphone-13-trang-1.webp",
+      "price": 16460000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 16,
+      "brand": "APPLE"
+    },
+    {
+      "id": 47,
+      "name": "Realme 13+",
+      "slug": "realme-13-5g",
+      "image": "/media/products/2026/03/24144234.png",
+      "price": 7455000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 10,
+      "brand": "REALME"
+    },
+    {
+      "id": 38,
+      "name": "iPhone 16 Plus",
+      "slug": "iphone-16-plus",
+      "image": "/media/products/2026/03/iphone-16-plus-den-1_1.webp",
+      "price": 23390000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 27,
+      "brand": "APPLE"
+    },
+    {
+      "id": 49,
+      "name": "RedMagic 10S Pro",
+      "slug": "redmagic-10s-pro",
+      "image": "/media/products/2026/03/1324231.png",
+      "price": 14790000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    },
+    {
+      "id": 41,
+      "name": "Tecno Camon 40 Pro",
+      "slug": "tecno-camon-30",
+      "image": "/media/products/2026/03/45745735.png",
+      "price": 5300000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "TECNO"
+    },
+    {
+      "id": 32,
+      "name": "Samsung Galaxy S25 Ultra",
+      "slug": "samsung-galaxy-s25-ultra",
+      "image": "/media/products/2026/03/mydz.png",
+      "price": 29040000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 7,
+      "brand": "SAMSUNG"
+    },
+    {
+      "id": 42,
+      "name": "Xiaomi 14T Pro",
+      "slug": "xiaomi-14t-pro",
+      "image": "/media/products/2026/03/635634645.png",
+      "price": 15920000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 16,
+      "brand": "XIAOMI"
+    },
+    {
+      "id": 29,
+      "name": "iPhone 17 Pro Max",
+      "slug": "iphone-17-pro-max",
+      "image": "/media/products/2026/02/iphone-17-pro-max-silver-pdp-image-position-1-silver-color-vn-vi.webp",
+      "price": 34190000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 12,
+      "brand": "APPLE"
+    },
+    {
+      "id": 48,
+      "name": "RedMagic 11 Pro",
+      "slug": "redmagic-11-pro",
+      "image": "/media/products/2026/03/51235123.png",
+      "price": 18890000,
+      "originalPrice": 0,
+      "discountPercent": 0,
+      "stock": 9,
+      "brand": "RED MAGIC"
+    }
+  ],
+  "banners": [
+    {
+      "id": "23412",
+      "image": "/media/banner/2026/04/note-15-series-web.webp"
+    },
+    {
+      "id": "667766",
+      "image": "/media/banner/2026/03/bct.png"
+    },
+    {
+      "id": "667788",
+      "image": "/media/banner/2026/03/BetterImage_1773777791006.jpeg"
+    },
+    {
+      "id": "72535",
+      "image": "/media/banner/2026/02/Screenshot_2026-02-25_134226.png"
+    },
+    {
+      "id": "74346",
+      "image": "/media/banner/2026/04/H2_614x212_ec359a19aa.webp"
+    },
+    {
+      "id": "74574",
+      "image": "/media/banner/2026/03/fire-icon-2025.gif"
+    },
+    {
+      "id": "76234",
+      "image": "/media/banner/2026/02/78253.webp"
+    },
+    {
+      "id": "76294",
+      "image": "/media/banner/2026/03/sdf.gif"
+    },
+    {
+      "id": "83861",
+      "image": "/media/banner/2026/03/s-edu-2025.webp"
+    },
+    {
+      "id": "83862",
+      "image": "/media/banner/2026/03/gian-hang-samsung-home.webp"
+    },
+    {
+      "id": "83863",
+      "image": "/media/banner/2026/04/post-daile-hh-web.webp"
+    },
+    {
+      "id": "83864",
+      "image": "/media/banner/2026/03/sdfsdf.webp"
+    },
+    {
+      "id": "87412",
+      "image": "/media/banner/2026/04/redmi-a7-pro-web.webp"
+    }
+  ],
+  "offers": [
+    {
+      "id": "83861",
+      "image": "/media/banner/2026/03/s-edu-2025.webp"
+    },
+    {
+      "id": "83862",
+      "image": "/media/banner/2026/03/gian-hang-samsung-home.webp"
+    },
+    {
+      "id": "83863",
+      "image": "/media/banner/2026/04/post-daile-hh-web.webp"
+    },
+    {
+      "id": "83864",
+      "image": "/media/banner/2026/03/sdfsdf.webp"
+    }
+  ],
+  "blogs": [
+    {
+      "id": 5,
+      "title": "OPPO, Huawei",
+      "image": "/media/blog/2026/03/Oppo-FInd-X9-Ultra-thong-tin-cover_ZQM4Ex1.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Samsung Galaxy Wide Fold",
+      "image": "/media/blog/2026/03/Samsung-Wide-Fold-2.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Huawei Enjoy 90 Pro Max",
+      "image": "/media/blog/2026/03/su-kien-huawei-3.jpg"
+    },
+    {
+      "id": 1,
+      "title": "Xiaomi 18 Pro",
+      "image": "/media/blog/2026/03/thong-tin-xiaomi-18-pro-1.jpg"
+    }
+  ]
+}
